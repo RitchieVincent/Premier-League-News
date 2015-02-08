@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- Social-feed css -->
+        <link href="stylesheets/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+        <!-- font-awesome for social network icons -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <form>
+            <label for='teamSelect'>Select a team</label>
+            <select name='teamName' id='teamSelect'>
+                <option selected='selected'>Arsenal</option>
+                <option>Aston Villa</option>
+                <option>Burnley</option>
+                <option>Chelsea</option>
+                <option>Crystal Palace</option>
+                <option>Everton</option>
+                <option>Hull</option>
+                <option>Leicester</option>
+                <option>Liverpool</option>
+                <option>Manchester City</option>
+                <option>Manchester United</option>
+                <option>Newcastle</option>
+                <option>Queens Park Rangers</option>
+                <option>Southampton</option>
+                <option>Stoke</option>
+                <option>Sunderland</option>
+                <option>Swansea</option>
+                <option>Tottenham</option>
+                <option>West Bromwich Albion</option>
+                <option>West Ham</option>
+            </select>
+        </form>
+
+        <div id="filterResults"><p class="teamSelected"></p><img id="selectedImage" src="#"><p class="filterSelected"></p></div>
+
+        <div class="social-feed-container"></div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <!-- Codebird.js - required for TWITTER -->
+        <script src="bower_components/codebird-js/codebird.js"></script>
+        <!-- doT.js for rendering templates and moment.js for showing time ago -->
+        <script src="bower_components/doT/doT.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <!-- Social-feed js -->
+        <script src="javascripts/jquery.socialfeed.js"></script>
+        <!-- Main script file -->
+        <script src="javascripts/script.js"></script>
+    </body>
+</html>
