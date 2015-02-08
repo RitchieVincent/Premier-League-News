@@ -1,0 +1,44 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+@import "bootstrap";
+.storyCard {
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.feedEkList {
+    width: 400px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.feedEkList li {
+    border-bottom: 1px solid #D3CAD7;
+    padding: 5px;
+}
+
+.feedEkList li:last-child {
+    border-bottom: none;
+}
+
+.itemTitle a {
+    font-weight: bold;
+    color: #4EBAFF !important;
+    text-decoration: none
+}
+
+.itemTitle a:hover {
+    text-decoration: underline
+}
+
+.itemDate {
+    font-size: 11px;
+    color: #AAAAAA;
+}
+.upBtn:hover{
+    cursor: pointer;
+    color: #B3B8B9;
+}
