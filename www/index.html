@@ -18,6 +18,17 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- Codebird.js - required for TWITTER -->
+    <script src="js/codebird-js/codebird.js"></script>
+    <!-- doT.js for rendering templates and moment.js for showing time ago -->
+    <script src="js/doT/doT.min.js"></script>
+    <script src="js/moment/min/moment.min.js"></script>
+    <!-- Social-feed js -->
+    <script src="js/jquery.socialfeed.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body ng-controller="MainCtrl">
@@ -27,7 +38,7 @@
     <script id="templates/sideMenu.html" type="text/ng-template">
         <ion-side-menus enable-menu-with-back-views="false">
             <ion-side-menu-content>
-                <ion-nav-bar class="bar-positive">
+                <ion-nav-bar class="bar-positive" id="navBar">
                     <ion-nav-back-button>
                     </ion-nav-back-button>
 
@@ -65,6 +76,9 @@
     <script id="templates/social.html" type="text/ng-template">
         <ion-view view-title="Social feeds">
             <ion-content>
+                <div id="filterResults">
+                    <img id="selectedImage" src="#">
+                </div>
                 <div class="list">
                     <label class="item item-input item-select">
                         <div class="input-label">
@@ -94,11 +108,8 @@
                         </select>
                     </label>
                 </div>
-                <ion-list ng-controller="socialController">
-                    <ion-item ng-repeat="item in items">
-                        <i class="icon ion-{{item.icon}}"></i>{{item.title}}
-                    </ion-item>
-                </ion-list>
+
+                <div class="social-feed-container"></div>
             </ion-content>
         </ion-view>
     </script>
