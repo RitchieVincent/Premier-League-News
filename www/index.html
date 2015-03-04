@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    
+    <link href="css/ionic.app.min.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app="pLNews">
+    <ion-nav-view></ion-nav-view>
+
+    <script id="main.html" type="text/ng-template">
+        <ion-view title="Home">
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+
+            <ion-content class="padding">
+                <h2>This is page one!</h2>
+            </ion-content>
+
+        </ion-view>
+    </script>
+
+    <script id="newsFeed.html" type="text/ng-template">
+
+        <ion-view title="News feed">
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+
+            <ion-content ng-controller="FeedCtrl" ng-init="teamSelect()">
+
+                <div class="bar bar-header bar-positive">
+                    <h1 class="title">{{selectedTeamMsg}}</h1>
+                </div>
+                <div class="bar bar-subheader teamImage {{selectedTeamClass}}">
+                    <img src='{{selectedTeamImg}}'>
+                    
+                    
+                </div>
+                <br><br><br><br><br><br>
+
+                <div>
+                    <div class="card" ng-repeat="feed in feeds | filter:filterText">
+                        <div class="item item-text-wrap">
+                            <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>
+                            <p>{{feed.contentSnippet}}</p>
+                            <span>{{feed.publishedDate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+
+        </ion-view>
+    </script>
+
+    <script id="settings.html" type="text/ng-template">
+        <ion-view title="Settings">
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+
+            <ion-content class="padding" ng-controller="teamSelectController">
+
+
+
+
+
+                <select ng-model="selectedTeam" ng-options="opt as opt.label for opt in options" ng-change="update()"></select>
+
+                Selected team: {{ selectedTeam.value }}
+
+
+
+
+
+
+
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="menu.html" type="text/ng-template">
+        <ion-side-menus>
+
+            <ion-pane ion-side-menu-content>
+
+                <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+                    <ion-nav-back-button class="button-clear">
+                        <i class="icon ion-ios7-arrow-back"></i>
+                    </ion-nav-back-button>
+
+                </ion-nav-bar>
+
+                <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+            </ion-pane>
+
+            <ion-side-menu side="left">
+
+                <header class="bar bar-header bar-stable">
+                    <h1 class="title">Menu</h1>
+                </header>
+
+                <ion-content class="has-header">
+
+                    <div class="list">
+                        <div class="item" ui-sref="app.main" menu-close>Home</div>
+                        <div class="item" ui-sref="app.newsFeed" menu-close>News feed</div>
+                        <div class="item" ui-sref="app.settings" menu-close>Settings</div>
+                    </div>
+
+                </ion-content>
+
+            </ion-side-menu>
+
+        </ion-side-menus>
+
+    </script>
+
+</body>
+
+</html>
