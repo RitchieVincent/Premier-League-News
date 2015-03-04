@@ -7022,6 +7022,18 @@ a.button {
     margin: 0 auto;
     height: 100%; }
 
+.teamSelectBox {
+  color: white;
+  background-color: #387ef5;
+  height: 40px;
+  width: 100%;
+  border: 0;
+  padding: 10px; }
+
+.selectedTeamClass {
+  background-color: #0a4fbd;
+  color: white; }
+
 .ars {
   background-color: #DA0208; }
 

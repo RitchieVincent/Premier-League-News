@@ -60,29 +60,57 @@ rssApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 rssApp.controller("FeedCtrl", ['$scope', 'FeedService', function ($scope, Feed) {
-//    $scope.filter = '';
-//    
-//    $scope.$on('$ionicView.enter', function(){
-//        alert("woo");
-//    });
-    
+    //    $scope.filter = '';
+    //    
+    //    $scope.$on('$ionicView.enter', function(){
+    //        alert("woo");
+    //    });
+
+    numFeeds = 5;
+
+    $scope.doRefresh = function () {
+        $scope.loadFeed();
+        $scope.$broadcast('scroll.refreshComplete');
+    };
+
+    $scope.loadMore = function () {
+        if(numFeeds<30){ //Stops the scroll going on infinitely
+            numFeeds++;
+            $scope.$broadcast('scroll.infiniteScrollComplete');
+            console.log(numFeeds);
+            $scope.loadFeed();
+        } else{
+            $scope.$broadcast('scroll.infiniteScrollComplete');
+        }
+    };
+
     $scope.teamSelect = function () {
         team = window.localStorage['team'] || 'Arsenal';
         teamImg = window.localStorage['teamImg'] || '';
         teamClass = window.localStorage['teamClass'] || '';
-        
+        filter = window.localStorage['filter'] || '.';
+
         $scope.selectedTeamMsg = 'Your chosen team is ' + team + '.';
         $scope.teamSelected = team;
         $scope.selectedTeamImg = teamImg;
         $scope.selectedTeamClass = teamClass;
-        $scope.feedSrc = 'http://pipes.yahoo.com/pipes/pipe.run?_id=d5af746000fcb3a1606ee8eff37328dd&_render=rss&textinput2=e&textinput1=' + team + '';
+        $scope.feedSrc = 'http://pipes.yahoo.com/pipes/pipe.run?_id=d5af746000fcb3a1606ee8eff37328dd&_render=rss&textinput2=' + filter + '&textinput1=' + team + '';
         $scope.loadFeed();
     };
-    
+
     $scope.loadFeed = function (e) {
         Feed.parseFeed($scope.feedSrc).then(function (res) {
             $scope.feeds = res.data.responseData.feed.entries;
         });
+    }
+}]);
+
+rssApp.controller('filterRadioController', ['$scope', function($scope) {
+    $scope.color = {
+        name: '' //Default value
+    };
+    $scope.updateFilter = function () {
+        window.localStorage['filter'] = $scope.color.name;
     }
 }]);
 
@@ -211,8 +239,9 @@ rssApp.controller('teamSelectController', ['$scope', function ($scope) {
             image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/w/west-ham/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png'
         }
     ];
-    $scope.selectedTeam = $scope.options[-1];
-    $scope.update = function() {
+//    $scope.selectedTeam = $scope.options[-1];
+    $scope.selectedTeam = team;
+    $scope.update = function () {
         window.localStorage['team'] = $scope.selectedTeam.value;
         window.localStorage['teamImg'] = $scope.selectedTeam.image;
         window.localStorage['teamClass'] = $scope.selectedTeam.class;
@@ -225,7 +254,7 @@ rssApp.controller('teamSelectController', ['$scope', function ($scope) {
 rssApp.factory('FeedService', ['$http', function ($http) {
     return {
         parseFeed: function (url) {
-            return $http.jsonp('http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=15&callback=JSON_CALLBACK&q=' + encodeURIComponent(url));
+            return $http.jsonp('http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=' + numFeeds + '&callback=JSON_CALLBACK&q=' + encodeURIComponent(url));
         }
     }
 }]);

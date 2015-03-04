@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-    
+
     <link href="css/ionic.app.min.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
@@ -41,17 +41,21 @@
                 <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
             </ion-nav-buttons>
 
-            <ion-content ng-controller="FeedCtrl" ng-init="teamSelect()">
+            <ion-content ng-controller="FeedCtrl" ng-init="teamSelect()" has-bouncing="true">
+                <ion-refresher pulling-text="Release to refresh..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c" refreshing-text="Refreshing!"></ion-refresher>
 
                 <div class="bar bar-header bar-positive">
                     <h1 class="title">{{selectedTeamMsg}}</h1>
                 </div>
                 <div class="bar bar-subheader teamImage {{selectedTeamClass}}">
                     <img src='{{selectedTeamImg}}'>
-                    
-                    
                 </div>
-                <br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
                 <div>
                     <div class="card" ng-repeat="feed in feeds | filter:filterText">
@@ -62,6 +66,7 @@
                         </div>
                     </div>
                 </div>
+                <ion-infinite-scroll on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
             </ion-content>
 
         </ion-view>
@@ -74,18 +79,51 @@
             </ion-nav-buttons>
 
             <ion-content class="padding" ng-controller="teamSelectController">
+                <h4>Select your team</h4>
+                <select ng-model="selectedTeam" ng-options="opt.label for opt in options" ng-change="update()" class="teamSelectBox">
+                    <option value="" class="selectedTeamClass" selected>{{selectedTeam}}</option>
+                </select>
+
+                <!--Selected team: {{ selectedTeam.value }}-->
+
+                <h4>Select a filter for the news feed</h4>
+
+                <div class="list" ng-controller="filterRadioController">
+                    <label class="item item-radio">
+                        <input type="radio" name="group" ng-model="color.name" value="." ng-change="updateFilter()">
+                        <div class="item-content">
+                            <span>All</span>
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                    </label>
+
+                    <label class="item item-radio">
+                        <input type="radio" name="group" ng-model="color.name" value="Injury" ng-change="updateFilter()">
+                        <div class="item-content">
+                            <span>Injuries</span>
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                    </label>
+
+                    <label class="item item-radio">
+                        <input type="radio" name="group" ng-model="color.name" value="Transfer" ng-change="updateFilter()">
+                        <div class="item-content">
+                            <span>Transfers</span>
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                    </label>
 
 
+                    <label class="item item-radio">
+                        <input type="radio" name="group" ng-model="color.name" value="Result" ng-change="updateFilter()">
+                        <div class="item-content">
+                            <span>Results</span>
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                    </label>
 
-
-
-                <select ng-model="selectedTeam" ng-options="opt as opt.label for opt in options" ng-change="update()"></select>
-
-                Selected team: {{ selectedTeam.value }}
-
-
-
-
+                    {{color.name}}
+                </div>
 
 
 
