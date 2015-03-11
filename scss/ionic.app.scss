@@ -26,9 +26,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
  
-
+.bar-subheader {
+    top: 0;
+}
 .teamImage {
-    height: 80px;
+    height: 120px;
     img{
         display: block;
         margin: 0 auto;
@@ -39,7 +41,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .teamSelectBox {
     color: white;
     background-color: $positive;
-    height: 40px;
+    height: 60px;
     width: 100%;
     border: 0;
     padding: 10px;
@@ -51,7 +53,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 
-
+ion-content{
+    background-color: #ececec;
+}
 
 
 

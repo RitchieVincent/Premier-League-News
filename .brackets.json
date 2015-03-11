@@ -1,5 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
-        "C:/Users/Ritchie/Documents/Uni/Final year project/Project/app/premierLeagueNews/gulpfile.js"
+        "C:/Users/Ritchie/Documents/Uni/Final year project/Project/app/premierLeagueNews/gulpfile.js",
+        "C:/Users/Ritchie/Documents/Uni/Final year project/Project/app/premierLeagueNews/www/js/social-media-feed.js",
+        "C:/Users/Ritchie/Documents/Uni/Final year project/Project/app/premierLeagueNews/www/js/script.js"
     ]
 }

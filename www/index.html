@@ -15,7 +15,16 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Codebird.js - required for TWITTER -->
+    <script src="js/codebird-js/codebird.js"></script>
+    <!-- doT.js for rendering templates and moment.js for showing time ago -->
+    <script src="js/doT/doT.min.js"></script>
+    <script src="js/moment/min/moment.min.js"></script>
+    <!-- Social-feed js -->
+    <script src="js/jquery.socialfeed.js"></script>
 </head>
 
 <body ng-app="pLNews">
@@ -28,7 +37,7 @@
             </ion-nav-buttons>
 
             <ion-content class="padding">
-                <h2>This is page one!</h2>
+                <h2>Home page.</h2>
             </ion-content>
 
         </ion-view>
@@ -41,9 +50,42 @@
                 <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
             </ion-nav-buttons>
 
-            <ion-content ng-controller="FeedCtrl" ng-init="teamSelect()" has-bouncing="true">
-                <ion-refresher pulling-text="Release to refresh..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c" refreshing-text="Refreshing!"></ion-refresher>
+            <ion-content ng-controller="feedController" ng-init="teamSelect()" has-bouncing="true">
+                <ion-refresher pulling-text="Release to refresh..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c" refreshing-text="Refreshing!" pulling-icon="ion-ios7-arrow-thin-down"></ion-refresher>
 
+                <div class="bar bar-subheader teamImage {{selectedTeamClass}}">
+                    <img src='{{selectedTeamImg}}'>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="feedArea">
+                    <div class="card" ng-repeat="feed in feeds | filter:filterText">
+                        <div class="item item-text-wrap">
+                            <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>
+                            <p>{{feed.contentSnippet}}</p>
+                            <span>{{feed.publishedDate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <ion-infinite-scroll on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+            </ion-content>
+
+        </ion-view>
+    </script>
+
+    <script id="socialFeed.html" type="text/ng-template">
+
+        <ion-view title="Social feed">
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+
+            <ion-content ng-controller="socialController" ng-init="teamSelect()" has-bouncing="true">
                 <div class="bar bar-header bar-positive">
                     <h1 class="title">{{selectedTeamMsg}}</h1>
                 </div>
@@ -57,16 +99,7 @@
                 <br>
                 <br>
 
-                <div>
-                    <div class="card" ng-repeat="feed in feeds | filter:filterText">
-                        <div class="item item-text-wrap">
-                            <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>
-                            <p>{{feed.contentSnippet}}</p>
-                            <span>{{feed.publishedDate}}</span>
-                        </div>
-                    </div>
-                </div>
-                <ion-infinite-scroll on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+                <div class="social-feed-container"></div>
             </ion-content>
 
         </ion-view>
@@ -156,9 +189,10 @@
                 <ion-content class="has-header">
 
                     <div class="list">
-                        <div class="item" ui-sref="app.main" menu-close>Home</div>
-                        <div class="item" ui-sref="app.newsFeed" menu-close>News feed</div>
-                        <div class="item" ui-sref="app.settings" menu-close>Settings</div>
+                        <div class="item" ui-sref="app.main" menu-close><i class="icon ion-home"></i> Home</div>
+                        <div class="item" ui-sref="app.newsFeed" menu-close><i class="icon ion-social-rss"></i> News feed</div>
+                        <div class="item" ui-sref="app.socialFeed" menu-close><i class="icon ion-social-twitter"></i><i class="icon ion-social-facebook"></i> Social feed</div>
+                        <div class="item" ui-sref="app.settings" menu-close><i class="icon ion-android-settings"></i> Settings</div>
                     </div>
 
                 </ion-content>

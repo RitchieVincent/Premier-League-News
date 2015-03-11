@@ -7015,8 +7015,11 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar-subheader {
+  top: 0; }
+
 .teamImage {
-  height: 80px; }
+  height: 120px; }
   .teamImage img {
     display: block;
     margin: 0 auto;
@@ -7025,7 +7028,7 @@ a.button {
 .teamSelectBox {
   color: white;
   background-color: #387ef5;
-  height: 40px;
+  height: 60px;
   width: 100%;
   border: 0;
   padding: 10px; }
@@ -7033,6 +7036,9 @@ a.button {
 .selectedTeamClass {
   background-color: #0a4fbd;
   color: white; }
+
+ion-content {
+  background-color: #ececec; }
 
 .ars {
   background-color: #DA0208; }
