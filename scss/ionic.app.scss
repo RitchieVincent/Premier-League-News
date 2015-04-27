@@ -1,23 +1,913 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
-
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+//ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
+//    background-color: red;
+//}
+//Mixins---------------------------------------
+@mixin contentPadding(){
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@mixin topPadding(){
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+//Var------------------------------------------
+$text: #FFFFFF;
+$ptext: #212121;
+$stext: #727272;
+//Settings/News-------------------------------------
+.settingsPage, .newsPage, .socialPage {
+    .teamImage {
+        margin-bottom: 0;
+    }
+    .teamImage img {
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        color: $text;
+        margin: 0;
+        font-size: 2.5em;
+        line-height: 1em;
+        padding-bottom: 20px;
+    }
+    h2 {
+        color: $ptext;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    .settingsBottom{
+        margin-top: 20px;
+        .item{
+            padding: 10px;
+        }
+    }
+    select{
+        width: 88%;
+        margin-left: 12%;
+    }
+}
+//All pages------------------------------------
+.topSection{
+    @include topPadding();
+}
+.bottomSection{
+    @include contentPadding();
+}
+//Team styles----------------------------------
+.ars {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #536DFE;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+                font-weight: 300;
+            }
+        }
+        .item.item-footer{
+            background-color: $accent;
+        }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
 
+.avi {
+    $primary: #673AB7;
+    $dprimary: #512DA8;
+    $lprimary: #D1C4E9;
+    $accent: #448AFF;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.bur {
+    $primary: #9C27B0;
+    $dprimary: #7B1FA2;
+    $lprimary: #E1BEE7;
+    $accent: #FFC107;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+        .item.item-footer{
+            background-color: $accent;
+        }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.che {
+    $primary: #3F51B5;
+    $dprimary: #303F9F;
+    $lprimary: #C5CAE9;
+    $accent: #FF5252;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+                font-weight: 300;
+            }
+        }
+        .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.cpa {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #448AFF;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.eve {
+    $primary: #3F51B5;
+    $dprimary: #303F9F;
+    $lprimary: #C5CAE9;
+    $accent: #448AFF;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+        }
+        .item.item-footer{
+            background-color: $accent;
+        }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.hul {
+    $primary: #FF9800;
+    $dprimary: #F57C00;
+    $lprimary: #FFE0B2;
+    $accent: #FF5722;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+                font-weight: 300;
+            }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.lei {
+    $primary: #3F51B5;
+    $dprimary: #303F9F;
+    $lprimary: #C5CAE9;
+    $accent: #FF9800;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.liv {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #009688;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+        }
+        .item.item-footer{
+            background-color: $accent;
+        }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.mnc {
+    $primary: #03A9F4;
+    $dprimary: #0288D1;
+    $lprimary: #B3E5FC;
+    $accent: #FFC107;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.mnu {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #FFEB3B;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.new {
+    $primary: #9E9E9E;
+    $dprimary: #616161;
+    $lprimary: #F5F5F5;
+    $accent: #FFC107;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+                font-weight: 300;
+            }
+        }
+        .item.item-footer{
+            background-color: $accent;
+        }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.qpr {
+    $primary: #2196F3;
+    $dprimary: #1976D2;
+    $lprimary: #BBDEFB;
+    $accent: #9E9E9E;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.shm {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #FFC107;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.stk {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #448AFF;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+            background-color: $dprimary;
+            p{
+                color: $text;
+                font-weight: 300;
+            }
+        }
+        .item.item-footer{
+            background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.sun {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #FF9800;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.swa {
+    $primary: #607D8B;
+    $dprimary: #455A64;
+    $lprimary: #CFD8DC;
+    $accent: #FF5252;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.tot {
+    $primary: #9E9E9E;
+    $dprimary: #616161;
+    $lprimary: #F5F5F5;
+    $accent: #536DFE;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.wbm {
+    $primary: #3F51B5;
+    $dprimary: #303F9F;
+    $lprimary: #C5CAE9;
+    $accent: #9E9E9E;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.whm {
+    $primary: #673AB7;
+    $dprimary: #512DA8;
+    $lprimary: #D1C4E9;
+    $accent: #FFC107;
+    .navBar{
+        background-color: $primary;
+    }
+    .topSection {
+        background-color: $primary;
+    }
+    .newsPage{
+        .item.item-divider{
+        background-color: $dprimary;
+        p{
+            color: $text;
+            font-weight: 300;
+        }
+    }
+    .item.item-footer{
+        background-color: $accent;
+    }   
+    }
+    .socialPage{
+        a{
+            color: $accent;
+        }
+    }
+    select {
+        border: none;
+        border-radius: 0;
+        background-color: $accent;
+        color: $text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+//Navbar-----------------------------
+.navBar {
+    border: none;
+    height: 50px;
+    color: $text;
+    background-image: none;
+    .button{
+        color: $text;
+        &:focus{
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+.menuPage{
+    .item-content {
+        padding: 0;
+    }
+    .row{
+        margin-bottom: 0;
+        padding: 15px;
+    }
+    p{
+        font-size: 1em;
+        line-height: 2.2em;
+    }
+    i{
+        font-size: 1.5em;
+        color: $ptext;
+        line-height: 1.5em;
+    }
+    .col-25{
+        float: left;
+    }
+}
+//News page---------------------------
+.newsPage{
+    .newsBottom{
+        margin-top: 20px;
+    }
+    .hideMe{
+        opacity: 0.2;
+    }
+}
+//Social page------------------------
+.socialPage{
+    .item{
+        padding: 0;
+        .socialTime{
+            font-size: 0.7em;
+            color: $stext;
+        }
+        p{
+            padding: 20px 20px 0 20px;
+            color: $ptext;
+        }
+        p + p{
+            padding: 0 20px 20px 20px;
+        }
+    }
+    .item.item-divider p {
+        font-weight: 400;
+    }
+    .ion-social-facebook {
+        color: #3C5A99;
+    }
+    .ion-social-twitter {
+        color: #55ACEE;
+    }
+    .ion-social-instagram {
+        color: #735449;
+    }
+}

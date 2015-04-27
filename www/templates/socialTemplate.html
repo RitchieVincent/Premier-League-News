@@ -1,0 +1,18 @@
+<div class="social-feed-element {{? !it.moderation_passed}}hidden{{?}} card" dt-create="{{=it.dt_create}}" social-feed-id="{{=it.id}}">
+    <div class='content'>
+        <div class="media-body">
+            <div class='text-wrapper item item-text-wrap'>
+                <a href="#" onclick="window.open('{{=it.link}}', '_blank', 'location=yes'); return false;">
+                    <div class="item item-image">
+                        {{=it.attachment}}
+                    </div>
+                </a>
+                <div class="item item-divider">
+                    <p class="social-feed-text">{{=it.text}}</p>
+                    <p class="socialTime"><i class="ion-social-{{=it.social_network}}"></i> {{=it.time_ago}}</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

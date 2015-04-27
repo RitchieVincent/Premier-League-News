@@ -1,5 +1,47 @@
-<ion-view view-title="FootFeeds">
-    <ion-content>
-        <h1>Settings</h1>
+<ion-view title="Settings">
+    <ion-content class="settingsPage" ng-class="selectedTeam.class">
+        <div class="topSection settingsTop">
+            <div class="row teamImage">
+                <img src="{{selectedTeam.image}}" alt="Selected team's logo">
+            </div>
+            <h1>{{selectedTeam.value}}</h1>
+        </div>
+        <div class="bottomSection settingsBottom">
+            <div class="list">
+                <div class="item item-divider">
+                    Select your team
+                </div>
+                <div class="item item-icon-left" href="#">
+                    <i class="icon ion-android-star"></i>
+                    <select ng-model="selectedTeam" ng-options="opt.label for opt in options" ng-change="update(selectedTeam)" class="teamSelectBox browser-default">
+                        <option value="" class="selectedTeamClass" selected>{{selectedTeam.value}}</option>
+                    </select>
+                </div>
+                <div class="item item-divider">
+                    Select your filter
+                </div>
+                <div class="list">
+                    <p>
+                        <input class="with-gap" name="filter" type="radio" id="all" ng-model="filter.name" value="." ng-change="updateFilter(filter)"/>
+                        <label for="all">All</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="filter" type="radio" id="injury" ng-model="filter.name" value="injury" ng-change="updateFilter(filter)"/>
+                        <label for="injury">Injuries</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="filter" type="radio" id="transfer" ng-model="filter.name" value="transfer" ng-change="updateFilter(filter)"/>
+                        <label for="transfer">Transfers</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="filter" type="radio" id="result" ng-model="filter.name" value="result" ng-change="updateFilter(filter)"/>
+                        <label for="result">Results</label>
+                    </p>
+                    
+
+                    {{filter.name}}
+                </div>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

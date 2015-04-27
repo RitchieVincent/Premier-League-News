@@ -1,5 +1,12 @@
-<ion-view view-title="FootFeeds">
-    <ion-content>
-        <h1>Social</h1>
+<ion-view view-title="Social feeds">
+    <ion-content class="socialPage" ng-class="selectedTeam.class">
+        <ion-refresher on-refresh="doRefresh()" pulling-icon="ion-android-arrow-down"></ion-refresher>
+        <div class="topSection socialTop">
+            <div class="row teamImage">
+                <img src="{{selectedTeam.image}}" alt="Selected team's logo">
+            </div>
+            <h1>{{selectedTeam.value}}</h1>
+        </div>
+        <div class="social-feed-container"></div>
     </ion-content>
 </ion-view>

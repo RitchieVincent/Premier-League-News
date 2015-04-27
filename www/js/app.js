@@ -1,4 +1,4 @@
-angular.module('footFeeds', ['ionic', 'footFeeds.controllers'])
+angular.module('footFeeds', ['ionic', 'footFeeds.controllers', 'footFeeds.services'])
 
 .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -14,14 +14,19 @@ angular.module('footFeeds', ['ionic', 'footFeeds.controllers'])
     });
 })
 
-.config(function ($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+    //This line disables JavaScript scrolling, which is laggy and outdated, using native scrolling instead
+    if (!ionic.Platform.isIOS()) $ionicConfigProvider.scrolling.jsScrolling(false);
+
+
     $stateProvider
 
         .state('app', {
         url: "/app",
         abstract: true,
         templateUrl: "templates/menu.html",
-        controller: 'AppCtrl'
+        controller: "menuController"
     })
 
     .state('app.home', {
@@ -36,7 +41,8 @@ angular.module('footFeeds', ['ionic', 'footFeeds.controllers'])
             url: "/news",
             views: {
                 'menuContent': {
-                    templateUrl: "templates/news.html"
+                    templateUrl: "templates/news.html",
+                    controller: "newsController"
                 }
             }
         })
@@ -44,7 +50,16 @@ angular.module('footFeeds', ['ionic', 'footFeeds.controllers'])
             url: "/social",
             views: {
                 'menuContent': {
-                    templateUrl: "templates/social.html"
+                    templateUrl: "templates/social.html",
+                    controller: "socialController"
+                }
+            }
+        })
+        .state('app.help', {
+            url: "/help",
+            views: {
+                'menuContent': {
+                    templateUrl: "templates/help.html"
                 }
             }
         })
@@ -52,7 +67,8 @@ angular.module('footFeeds', ['ionic', 'footFeeds.controllers'])
             url: "/settings",
             views: {
                 'menuContent': {
-                    templateUrl: "templates/settings.html"
+                    templateUrl: "templates/settings.html",
+                    controller: "settingsController"
                 }
             }
         });
