@@ -20,6 +20,7 @@ $ptext: #212121;
 $stext: #727272;
 //Settings/News-------------------------------------
 .settingsPage, .newsPage, .socialPage {
+    margin-top: -11px;
     .teamImage {
         margin-bottom: 0;
     }
@@ -50,6 +51,9 @@ $stext: #727272;
         width: 88%;
         margin-left: 12%;
     }
+}
+.settingsPage{
+    margin-bottom: 40px;
 }
 //All pages------------------------------------
 .topSection{
@@ -842,7 +846,8 @@ $stext: #727272;
 //Navbar-----------------------------
 .navBar {
     border: none;
-    height: 50px;
+    height: 60px;
+    padding: 12px;
     color: $text;
     background-image: none;
     .button{
@@ -852,34 +857,20 @@ $stext: #727272;
         }
     }
 }
-.menuPage{
-    .item-content {
-        padding: 0;
-    }
-    .row{
-        margin-bottom: 0;
-        padding: 15px;
-    }
-    p{
-        font-size: 1em;
-        line-height: 2.2em;
-    }
-    i{
-        font-size: 1.5em;
-        color: $ptext;
-        line-height: 1.5em;
-    }
-    .col-25{
-        float: left;
-    }
+.bar .title{
+    padding: 5px 0 0 35px;
+}
+.buttons.buttons-right.header-item {
+    padding-top: 5px;
 }
 //News page---------------------------
 .newsPage{
     .newsBottom{
         margin-top: 20px;
+        margin-bottom: 3em;
     }
     .hideMe{
-        opacity: 0.2;
+        opacity: 0.3;
     }
 }
 //Social page------------------------
@@ -902,12 +893,87 @@ $stext: #727272;
         font-weight: 400;
     }
     .ion-social-facebook {
-        color: #3C5A99;
+        color: #3b5998;
     }
     .ion-social-twitter {
-        color: #55ACEE;
+        color: #00aced;
     }
     .ion-social-instagram {
-        color: #735449;
+        color: #517fa4;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+//Menu---------------------------------
+.greyOut {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    z-index: 3;
+    transition: all 0.3s ease-out;
+}
+.greyHide{
+    visibility: hidden;
+    opacity: 0;
+}
+.greyShow{
+    visibility: visible;
+    opacity: 0.7;
+}
+.menuPage {
+    overflow-y: hidden;
+    line-height: 2.5em;
+    font-weight: 500;
+    margin-top: 15px;
+    i {
+        color: $stext;
+        font-size: 1.5em;
+    }
+    .item-complex .item-content {
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .item {
+        border: none;
+        font-size: 14px;
+    }
+    .row {
+        margin-bottom: 0;
+    }
+    .col-25 {
+        padding: 10px 40px 10px 20px;
+        float: left;
+        line-height: 3em;
+    }
+    .col-75 {
+        padding: 10px 0 10px 0;
+        line-height: 3.3em;
+    }
+}
+.menuClose {
+    text-align: right;
+    padding: 7px 10px 0 0;
+    i{
+        font-size: 1.5em;
+    }
+}
+
+//Popup----------------------
+.popup-container.favouritePopup.aboutPopup.popup-showing.active .popup {
+    width: 85%;
+}
+.popup-container.active .popup {
+    box-shadow: 0px 5px 30px 3px rgba(0,0,0,0.3);
 }

@@ -1,5 +1,43 @@
 angular.module('footFeeds.controllers', [])
 
+
+
+
+
+
+
+
+
+    .controller('mainController', function ($scope, $ionicPopup) {
+
+    $scope.moreMenu = function () { //The button on the right side of the nav bar displays a pop-up
+        var alertPopup = $ionicPopup.alert({
+            cssClass: 'favouritePopup aboutPopup', //Assigns classes to the pop-up box for styling
+            title: 'About', //The title displayed in the pop-up
+            template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>&#169; FootFeeds 2015</p>', //The text displayed
+            okType: 'waves-effect waves btn-flat' //Classes applied to the 'ok' button in the pop-up
+        });
+        alertPopup.then(function (res) { //A function that could be run when the pop-up is closed
+            //When popup closed
+        });
+    }
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .controller('settingsController', function ($scope, $window) {
     var team;
     $scope.options = [
@@ -241,6 +279,10 @@ angular.module('footFeeds.controllers', [])
         window.open(link, '_blank', 'location=yes');
         return false;
     };
+    
+//    $scope.hideCards = function (event) {
+//        $(event.target).addClass('hideMe');
+//    };
 }])
 
 

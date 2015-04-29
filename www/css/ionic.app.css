@@ -7603,29 +7603,34 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.settingsPage .teamImage, .newsPage .teamImage, .socialPage .teamImage {
-  margin-bottom: 0; }
-.settingsPage .teamImage img, .newsPage .teamImage img, .socialPage .teamImage img {
-  margin: 0 auto; }
-.settingsPage h1, .newsPage h1, .socialPage h1 {
-  text-align: center;
-  color: #FFFFFF;
-  margin: 0;
-  font-size: 2.5em;
-  line-height: 1em;
-  padding-bottom: 20px; }
-.settingsPage h2, .newsPage h2, .socialPage h2 {
-  color: #212121;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin: 0; }
-.settingsPage .settingsBottom, .newsPage .settingsBottom, .socialPage .settingsBottom {
-  margin-top: 20px; }
-  .settingsPage .settingsBottom .item, .newsPage .settingsBottom .item, .socialPage .settingsBottom .item {
-    padding: 10px; }
-.settingsPage select, .newsPage select, .socialPage select {
-  width: 88%;
-  margin-left: 12%; }
+.settingsPage, .newsPage, .socialPage {
+  margin-top: -11px; }
+  .settingsPage .teamImage, .newsPage .teamImage, .socialPage .teamImage {
+    margin-bottom: 0; }
+  .settingsPage .teamImage img, .newsPage .teamImage img, .socialPage .teamImage img {
+    margin: 0 auto; }
+  .settingsPage h1, .newsPage h1, .socialPage h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1em;
+    padding-bottom: 20px; }
+  .settingsPage h2, .newsPage h2, .socialPage h2 {
+    color: #212121;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .settingsPage .settingsBottom, .newsPage .settingsBottom, .socialPage .settingsBottom {
+    margin-top: 20px; }
+    .settingsPage .settingsBottom .item, .newsPage .settingsBottom .item, .socialPage .settingsBottom .item {
+      padding: 10px; }
+  .settingsPage select, .newsPage select, .socialPage select {
+    width: 88%;
+    margin-left: 12%; }
+
+.settingsPage {
+  margin-bottom: 40px; }
 
 .topSection {
   padding-top: 20px;
@@ -8057,7 +8062,8 @@ a.button {
 
 .navBar {
   border: none;
-  height: 50px;
+  height: 60px;
+  padding: 12px;
   color: #FFFFFF;
   background-image: none; }
   .navBar .button {
@@ -8065,25 +8071,17 @@ a.button {
     .navBar .button:focus {
       background-color: transparent; }
 
-.menuPage .item-content {
-  padding: 0; }
-.menuPage .row {
-  margin-bottom: 0;
-  padding: 15px; }
-.menuPage p {
-  font-size: 1em;
-  line-height: 2.2em; }
-.menuPage i {
-  font-size: 1.5em;
-  color: #212121;
-  line-height: 1.5em; }
-.menuPage .col-25 {
-  float: left; }
+.bar .title {
+  padding: 5px 0 0 35px; }
+
+.buttons.buttons-right.header-item {
+  padding-top: 5px; }
 
 .newsPage .newsBottom {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 3em; }
 .newsPage .hideMe {
-  opacity: 0.2; }
+  opacity: 0.3; }
 
 .socialPage .item {
   padding: 0; }
@@ -8098,8 +8096,62 @@ a.button {
 .socialPage .item.item-divider p {
   font-weight: 400; }
 .socialPage .ion-social-facebook {
-  color: #3C5A99; }
+  color: #3b5998; }
 .socialPage .ion-social-twitter {
-  color: #55ACEE; }
+  color: #00aced; }
 .socialPage .ion-social-instagram {
-  color: #735449; }
+  color: #517fa4; }
+
+.greyOut {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 3;
+  transition: all 0.3s ease-out; }
+
+.greyHide {
+  visibility: hidden;
+  opacity: 0; }
+
+.greyShow {
+  visibility: visible;
+  opacity: 0.7; }
+
+.menuPage {
+  overflow-y: hidden;
+  line-height: 2.5em;
+  font-weight: 500;
+  margin-top: 15px; }
+  .menuPage i {
+    color: #727272;
+    font-size: 1.5em; }
+  .menuPage .item-complex .item-content {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
+  .menuPage .item {
+    border: none;
+    font-size: 14px; }
+  .menuPage .row {
+    margin-bottom: 0; }
+  .menuPage .col-25 {
+    padding: 10px 40px 10px 20px;
+    float: left;
+    line-height: 3em; }
+  .menuPage .col-75 {
+    padding: 10px 0 10px 0;
+    line-height: 3.3em; }
+
+.menuClose {
+  text-align: right;
+  padding: 7px 10px 0 0; }
+  .menuClose i {
+    font-size: 1.5em; }
+
+.popup-container.favouritePopup.aboutPopup.popup-showing.active .popup {
+  width: 85%; }
+
+.popup-container.active .popup {
+  box-shadow: 0px 5px 30px 3px rgba(0, 0, 0, 0.3); }

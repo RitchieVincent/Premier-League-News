@@ -1,4 +1,4 @@
-angular.module('footFeeds', ['ionic', 'footFeeds.controllers', 'footFeeds.services'])
+angular.module('footFeeds', ['ionic', 'footFeeds.controllers', 'footFeeds.services', 'ionic.contrib.drawer'])
 
 .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {

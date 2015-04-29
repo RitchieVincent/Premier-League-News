@@ -8,19 +8,17 @@
             <h1>{{selectedTeam.value}}</h1>
         </div>
         <div class="bottomSection newsBottom">
-            <div class="card" ng-repeat="feed in feeds | filter:filterText" ng-click="hideCards()" ng-class="selectedTeam.class">
-                <div class=" {{hideClass}}">
-                    <div class="item item-divider">
-                        <p class="newsTitle">{{feed.title}}</p>
+            <div class="card" ng-repeat="feed in feeds | filter:filterText" > <!--ng-click="hideCards($event)"-->
+                <div class="item item-divider">
+                    <p class="newsTitle">{{feed.title}}</p>
+                </div>
+                <a href="#" ng-click="openLink('{{feed.link}}')">
+                    <div class="item item-text-wrap">
+                        <p class="newsContent">{{feed.contentSnippet}}</p>
                     </div>
-                    <a href="#" ng-click="openLink('{{feed.link}}')">
-                        <div class="item item-text-wrap">
-                            <p class="newsContent">{{feed.contentSnippet}}</p>
-                        </div>
-                    </a>
-                    <div class="item item-divider item-footer">
-                        <p class="newsDate">{{feed.publishedDate}}</p>
-                    </div>
+                </a>
+                <div class="item item-divider item-footer">
+                    <p class="newsDate">{{feed.publishedDate}}</p>
                 </div>
             </div>
         </div>
