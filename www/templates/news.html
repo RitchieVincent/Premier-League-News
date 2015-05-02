@@ -6,9 +6,10 @@
                 <img src="{{selectedTeam.image}}" alt="Selected team's logo">
             </div>
             <h1>{{selectedTeam.value}}</h1>
+            <h2>Selected filter: {{selectedFilter}}</h2>
         </div>
         <div class="bottomSection newsBottom">
-            <div class="card" ng-repeat="feed in feeds | filter:filterText" > <!--ng-click="hideCards($event)"-->
+            <div class="card" ng-repeat="feed in feeds | filter:filterText" ng-click="hideCards(post)" ng-class="{hideMe: post.read}">
                 <div class="item item-divider">
                     <p class="newsTitle">{{feed.title}}</p>
                 </div>

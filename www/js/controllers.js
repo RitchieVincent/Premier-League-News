@@ -8,27 +8,20 @@ angular.module('footFeeds.controllers', [])
 
 
 
-    .controller('mainController', function ($scope, $ionicPopup) {
+.controller('mainController', function ($scope, $ionicPopup) {
 
     $scope.moreMenu = function () { //The button on the right side of the nav bar displays a pop-up
         var alertPopup = $ionicPopup.alert({
-            cssClass: 'favouritePopup aboutPopup', //Assigns classes to the pop-up box for styling
+            cssClass: 'aboutPopup', //Assigns classes to the pop-up box for styling
             title: 'About', //The title displayed in the pop-up
             template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>&#169; FootFeeds 2015</p>', //The text displayed
-            okType: 'waves-effect waves btn-flat' //Classes applied to the 'ok' button in the pop-up
+            okType: 'waves-effect waves btn-flat popupOk' //Classes applied to the 'ok' button in the pop-up
         });
         alertPopup.then(function (res) { //A function that could be run when the pop-up is closed
             //When popup closed
         });
     }
-
-
 })
-
-
-
-
-
 
 
 
@@ -45,7 +38,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Arsenal',
             value: 'Arsenal',
             class: 'ars',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/a/arsenal/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/arsenal.png',
             facebook: '@Arsenal',
             twitter: '@arsenal',
             instagram: '@arsenal'
@@ -54,7 +47,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Aston Villa',
             value: 'Aston Villa',
             class: 'avi',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/a/aston-villa/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/aston-villa.png',
             facebook: '@avfcofficial',
             twitter: '@avfcofficial',
             instagram: '@avfcofficial'
@@ -63,7 +56,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Burnley',
             value: 'Burnley',
             class: 'bur',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/b/burnley/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/burnley.png',
             facebook: '@officialburnleyfc',
             twitter: '@burnleyofficial',
             instagram: '@burnleyofficial'
@@ -72,7 +65,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Chelsea',
             value: 'Chelsea',
             class: 'che',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/c/chelsea/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/chelsea.png',
             facebook: '@ChelseaFC',
             twitter: '@chelseafc',
             instagram: '@chelseafc'
@@ -81,7 +74,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Crystal Palace',
             value: 'Crystal Palace',
             class: 'cpa',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/c/crystal-palace/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/crystal-palace.png',
             facebook: '@officialcpfc',
             twitter: '@cpfc',
             instagram: '@official_cpfc'
@@ -90,7 +83,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Everton',
             value: 'Everton',
             class: 'eve',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/e/everton/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/everton.png',
             facebook: '@Everton',
             twitter: '@everton',
             instagram: '@officialeverton'
@@ -99,7 +92,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Hull',
             value: 'Hull',
             class: 'hul',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/h/hull/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/hull-city.png',
             facebook: '',
             twitter: '@hullcity',
             instagram: '@hullcityofficial'
@@ -108,7 +101,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Leicester',
             value: 'Leicester',
             class: 'lei',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/l/leicester/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/leicester-city.png',
             facebook: '@lcfcofficial',
             twitter: '@officialfoxes',
             instagram: '@officialfoxes'
@@ -117,7 +110,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Liverpool',
             value: 'Liverpool',
             class: 'liv',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/l/liverpool/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/liverpool.png',
             facebook: '@LiverpoolFC',
             twitter: '@lfc',
             instagram: '@liverpoolfc'
@@ -126,7 +119,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Manchester City',
             value: 'Manchester City',
             class: 'mnc',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/m/man-city/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/manchester-city.png',
             facebook: '@mcfcofficial',
             twitter: '@mcfc',
             instagram: '@mcfcofficial'
@@ -135,7 +128,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Manchester United',
             value: 'Manchester United',
             class: 'mnu',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/m/man-utd/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/manchester-united.png',
             facebook: '@manchesterunited',
             twitter: '@manutd',
             instagram: '@manchesterunited'
@@ -144,7 +137,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Newcastle',
             value: 'Newcastle',
             class: 'new',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/n/newcastle/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/newcastle-united.png',
             facebook: '@newcastleunited',
             twitter: '@nufc',
             instagram: '@newcastleunited_official'
@@ -153,7 +146,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Queens Park Rangers',
             value: 'Queens Park Rangers',
             class: 'qpr',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/q/qpr/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/queens-park-rangers.png',
             facebook: '@OfficialQPRFC',
             twitter: '@qprfc',
             instagram: '@officialQPR'
@@ -162,7 +155,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Southampton',
             value: 'Southampton',
             class: 'shm',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/s/southampton/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/southampton.png',
             facebook: '@southamptonfc',
             twitter: '@southamptonfc',
             instagram: '@southamptonfc'
@@ -171,7 +164,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Stoke',
             value: 'Stoke',
             class: 'stk',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/s/stoke/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/stoke-city.png',
             facebook: '@stokecity',
             twitter: '@stokecity',
             instagram: '@stokecity'
@@ -180,7 +173,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Sunderland',
             value: 'Sunderland',
             class: 'sun',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/s/sunderland/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/sunderland.png',
             facebook: '@sunderlandafc',
             twitter: '@sunderlandafc',
             instagram: '@sunderlandafcofficial'
@@ -189,7 +182,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Swansea',
             value: 'Swansea',
             class: 'swa',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/s/swansea/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/swansea-city.png',
             facebook: '@SwanseaCityFC',
             twitter: '@swansofficial',
             instagram: '@swansofficial'
@@ -198,7 +191,7 @@ angular.module('footFeeds.controllers', [])
             label: 'Tottenham',
             value: 'Tottenham',
             class: 'tot',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/s/spurs/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/tottenham-hotspur.png',
             facebook: '@TottenhamHotspur',
             twitter: '@spursofficial',
             instagram: '@spursofficial'
@@ -207,7 +200,7 @@ angular.module('footFeeds.controllers', [])
             label: 'West Bromwich Albion',
             value: 'West Bromwich Albion',
             class: 'wbm',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/w/west-brom/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/west-bromwich-albion.png',
             facebook: '@westbromwichalbionofficial',
             twitter: '@wbafcofficial',
             instagram: '@officialalbion'
@@ -216,7 +209,7 @@ angular.module('footFeeds.controllers', [])
             label: 'West Ham',
             value: 'West Ham',
             class: 'whm',
-            image: 'http://www.premierleague.com/content/dam/premierleague/shared-images/clubs/w/west-ham/logo.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png',
+            image: '../img/west-ham.png',
             facebook: '@westhamunitedofficial',
             twitter: '@whufc_official',
             instagram: '@whufc_official'
@@ -228,9 +221,12 @@ angular.module('footFeeds.controllers', [])
         localStorage.setItem('selectedTeam', JSON.stringify(team));
         $window.location.reload(true);
     }
+    $scope.filter = { //Sets the default filter to the locall stored filter, defaulting to the All filter if none found
+        name: localStorage.filter || '.'
+    };
     $scope.updateFilter = function (filter) {
         localStorage.filter = filter.name;
-        $window.location.reload(true);
+        setTimeout(function(){ $window.location.reload(true); }, 500);
     }
 })
 
@@ -253,7 +249,16 @@ angular.module('footFeeds.controllers', [])
 .controller('newsController', ['$scope', 'FeedService', '$ionicLoading', function ($scope, Feed, $ionicLoading) {
     $scope.selectedTeam = JSON.parse(localStorage.getItem('selectedTeam')) || [];
     numFeeds = 5;
-    filter = localStorage.filter || "all";
+    filter = localStorage.filter || ".";
+    if (filter == ".") {
+        $scope.selectedFilter = "No filter";
+    } else if (filter == "injury") {
+        $scope.selectedFilter = "Injuries";
+    } else if (filter == "transfer") {
+        $scope.selectedFilter = "Transfers";
+    } else if (filter == "result") {
+        $scope.selectedFilter = "Results";
+    }
 
     $scope.feedSrc = 'http://pipes.yahoo.com/pipes/pipe.run?_id=d5af746000fcb3a1606ee8eff37328dd&_render=rss&textinput2=' + filter + '&textinput1=' + $scope.selectedTeam.value + '';
 
@@ -279,10 +284,13 @@ angular.module('footFeeds.controllers', [])
         window.open(link, '_blank', 'location=yes');
         return false;
     };
-    
-//    $scope.hideCards = function (event) {
-//        $(event.target).addClass('hideMe');
-//    };
+
+//        $scope.hideCards = function () {
+//            
+//        };
+    $scope.hideCards = function(post){
+        post.read = true;
+    }
 }])
 
 
@@ -338,4 +346,5 @@ angular.module('footFeeds.controllers', [])
         runFeed();
         $scope.$broadcast('scroll.refreshComplete');
     };
+
 })

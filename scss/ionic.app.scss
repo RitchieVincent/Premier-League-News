@@ -18,11 +18,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 $text: #FFFFFF;
 $ptext: #212121;
 $stext: #727272;
-//Settings/News-------------------------------------
+//Settings/News/Social----------------------------
 .settingsPage, .newsPage, .socialPage {
-    margin-top: -11px;
     .teamImage {
         margin-bottom: 0;
+        height: 120px;
+        width: 120px;
     }
     .teamImage img {
         margin: 0 auto;
@@ -37,8 +38,9 @@ $stext: #727272;
     }
     h2 {
         color: $ptext;
-        font-size: 1.5em;
-        line-height: 1.5em;
+        font-size: 1em;
+        line-height: 1em;
+        text-align: center;
         margin: 0;
     }
     .settingsBottom{
@@ -52,10 +54,19 @@ $stext: #727272;
         margin-left: 12%;
     }
 }
-.settingsPage{
+.filterList:last-child {
     margin-bottom: 40px;
 }
+
+[type="radio"]+label {
+    color: $ptext;
+}
+
+
 //All pages------------------------------------
+.settingsPage, .newsPage, .socialPage, .homePage{
+    margin-top: -11px;
+}
 .topSection{
     @include topPadding();
 }
@@ -63,11 +74,8 @@ $stext: #727272;
     @include contentPadding();
 }
 //Team styles----------------------------------
-.ars {
-    $primary: #F44336;
-    $dprimary: #D32F2F;
-    $lprimary: #FFCDD2;
-    $accent: #536DFE;
+
+@mixin styles($primary, $dprimary, $lprimary, $accent){
     .navBar{
         background-color: $primary;
     }
@@ -100,6 +108,18 @@ $stext: #727272;
             outline: none;
         }
     }
+    .homePage{
+        .highlight{
+            color: $accent;
+        }
+    }
+}
+.ars {
+    $primary: #F44336;
+    $dprimary: #D32F2F;
+    $lprimary: #FFCDD2;
+    $accent: #536DFE;
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .avi {
@@ -107,38 +127,7 @@ $stext: #727272;
     $dprimary: #512DA8;
     $lprimary: #D1C4E9;
     $accent: #448AFF;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .bur {
@@ -146,38 +135,7 @@ $stext: #727272;
     $dprimary: #7B1FA2;
     $lprimary: #E1BEE7;
     $accent: #FFC107;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-        .item.item-footer{
-            background-color: $accent;
-        }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .che {
@@ -185,38 +143,7 @@ $stext: #727272;
     $dprimary: #303F9F;
     $lprimary: #C5CAE9;
     $accent: #FF5252;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $text;
-                font-weight: 300;
-            }
-        }
-        .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .cpa {
@@ -224,38 +151,7 @@ $stext: #727272;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
     $accent: #448AFF;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .eve {
@@ -263,38 +159,7 @@ $stext: #727272;
     $dprimary: #303F9F;
     $lprimary: #C5CAE9;
     $accent: #448AFF;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-        }
-        .item.item-footer{
-            background-color: $accent;
-        }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .hul {
@@ -302,38 +167,7 @@ $stext: #727272;
     $dprimary: #F57C00;
     $lprimary: #FFE0B2;
     $accent: #FF5722;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $text;
-                font-weight: 300;
-            }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .lei {
@@ -341,38 +175,7 @@ $stext: #727272;
     $dprimary: #303F9F;
     $lprimary: #C5CAE9;
     $accent: #FF9800;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .liv {
@@ -380,38 +183,7 @@ $stext: #727272;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
     $accent: #009688;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-        }
-        .item.item-footer{
-            background-color: $accent;
-        }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .mnc {
@@ -419,77 +191,15 @@ $stext: #727272;
     $dprimary: #0288D1;
     $lprimary: #B3E5FC;
     $accent: #FFC107;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .mnu {
     $primary: #F44336;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
-    $accent: #FFEB3B;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    $accent: #FF9800;
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .new {
@@ -497,38 +207,7 @@ $stext: #727272;
     $dprimary: #616161;
     $lprimary: #F5F5F5;
     $accent: #FFC107;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $text;
-                font-weight: 300;
-            }
-        }
-        .item.item-footer{
-            background-color: $accent;
-        }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .qpr {
@@ -536,38 +215,7 @@ $stext: #727272;
     $dprimary: #1976D2;
     $lprimary: #BBDEFB;
     $accent: #9E9E9E;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .shm {
@@ -575,38 +223,7 @@ $stext: #727272;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
     $accent: #FFC107;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .stk {
@@ -614,38 +231,7 @@ $stext: #727272;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
     $accent: #448AFF;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $text;
-                font-weight: 300;
-            }
-        }
-        .item.item-footer{
-            background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .sun {
@@ -653,116 +239,23 @@ $stext: #727272;
     $dprimary: #D32F2F;
     $lprimary: #FFCDD2;
     $accent: #FF9800;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .swa {
     $primary: #607D8B;
     $dprimary: #455A64;
     $lprimary: #CFD8DC;
-    $accent: #FF5252;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    $accent: #FF9800;
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .tot {
     $primary: #9E9E9E;
     $dprimary: #616161;
     $lprimary: #F5F5F5;
-    $accent: #536DFE;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    $accent: #3F51B5;
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .wbm {
@@ -770,38 +263,7 @@ $stext: #727272;
     $dprimary: #303F9F;
     $lprimary: #C5CAE9;
     $accent: #9E9E9E;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 .whm {
@@ -809,45 +271,14 @@ $stext: #727272;
     $dprimary: #512DA8;
     $lprimary: #D1C4E9;
     $accent: #FFC107;
-    .navBar{
-        background-color: $primary;
-    }
-    .topSection {
-        background-color: $primary;
-    }
-    .newsPage{
-        .item.item-divider{
-        background-color: $dprimary;
-        p{
-            color: $text;
-            font-weight: 300;
-        }
-    }
-    .item.item-footer{
-        background-color: $accent;
-    }   
-    }
-    .socialPage{
-        a{
-            color: $accent;
-        }
-    }
-    select {
-        border: none;
-        border-radius: 0;
-        background-color: $accent;
-        color: $text;
-        &:focus {
-            outline: none;
-        }
-    }
+    @include styles($primary, $dprimary, $lprimary, $accent);
 }
 
 //Navbar-----------------------------
 .navBar {
     border: none;
     height: 60px;
-    padding: 12px;
+    padding: 10px;
     color: $text;
     background-image: none;
     .button{
@@ -857,8 +288,10 @@ $stext: #727272;
         }
     }
 }
-.bar .title{
-    padding: 5px 0 0 35px;
+
+.bar .title.title-left {
+    text-align: center;
+    padding: 3px 0 0 0;
 }
 .buttons.buttons-right.header-item {
     padding-top: 5px;
@@ -969,11 +402,51 @@ $stext: #727272;
         font-size: 1.5em;
     }
 }
+//Home page----------------------
+.homeTop{
+    text-align: center;
+    .row{
+        margin-bottom: 0;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+        font-weight: 400;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+    padding-bottom: 0;
+}
+.homeBottom{
+    margin-top: 20px;
+    h2{
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
 
 //Popup----------------------
-.popup-container.favouritePopup.aboutPopup.popup-showing.active .popup {
+.popup-container.aboutPopup.popup-showing.active .popup {
     width: 85%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0 20px 0 20px;
+    h3{
+        font-size: 1.5em;
+        line-height: 2.5em;
+    }
 }
 .popup-container.active .popup {
     box-shadow: 0px 5px 30px 3px rgba(0,0,0,0.3);
+}
+.backdrop.visible {
+    display: block;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.6;
+    background-color: #000000;
 }

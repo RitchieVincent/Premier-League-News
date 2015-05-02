@@ -7603,34 +7603,41 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.settingsPage, .newsPage, .socialPage {
-  margin-top: -11px; }
-  .settingsPage .teamImage, .newsPage .teamImage, .socialPage .teamImage {
-    margin-bottom: 0; }
-  .settingsPage .teamImage img, .newsPage .teamImage img, .socialPage .teamImage img {
-    margin: 0 auto; }
-  .settingsPage h1, .newsPage h1, .socialPage h1 {
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0;
-    font-size: 2.5em;
-    line-height: 1em;
-    padding-bottom: 20px; }
-  .settingsPage h2, .newsPage h2, .socialPage h2 {
-    color: #212121;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin: 0; }
-  .settingsPage .settingsBottom, .newsPage .settingsBottom, .socialPage .settingsBottom {
-    margin-top: 20px; }
-    .settingsPage .settingsBottom .item, .newsPage .settingsBottom .item, .socialPage .settingsBottom .item {
-      padding: 10px; }
-  .settingsPage select, .newsPage select, .socialPage select {
-    width: 88%;
-    margin-left: 12%; }
+.settingsPage .teamImage, .newsPage .teamImage, .socialPage .teamImage {
+  margin-bottom: 0;
+  height: 120px;
+  width: 120px; }
+.settingsPage .teamImage img, .newsPage .teamImage img, .socialPage .teamImage img {
+  margin: 0 auto; }
+.settingsPage h1, .newsPage h1, .socialPage h1 {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding-bottom: 20px; }
+.settingsPage h2, .newsPage h2, .socialPage h2 {
+  color: #212121;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  margin: 0; }
+.settingsPage .settingsBottom, .newsPage .settingsBottom, .socialPage .settingsBottom {
+  margin-top: 20px; }
+  .settingsPage .settingsBottom .item, .newsPage .settingsBottom .item, .socialPage .settingsBottom .item {
+    padding: 10px; }
+.settingsPage select, .newsPage select, .socialPage select {
+  width: 88%;
+  margin-left: 12%; }
 
-.settingsPage {
+.filterList:last-child {
   margin-bottom: 40px; }
+
+[type="radio"] + label {
+  color: #212121; }
+
+.settingsPage, .newsPage, .socialPage, .homePage {
+  margin-top: -11px; }
 
 .topSection {
   padding-top: 20px;
@@ -7660,6 +7667,8 @@ a.button {
   color: #FFFFFF; }
   .ars select:focus {
     outline: none; }
+.ars .homePage .highlight {
+  color: #536DFE; }
 
 .avi .navBar {
   background-color: #673AB7; }
@@ -7681,6 +7690,8 @@ a.button {
   color: #FFFFFF; }
   .avi select:focus {
     outline: none; }
+.avi .homePage .highlight {
+  color: #448AFF; }
 
 .bur .navBar {
   background-color: #9C27B0; }
@@ -7702,6 +7713,8 @@ a.button {
   color: #FFFFFF; }
   .bur select:focus {
     outline: none; }
+.bur .homePage .highlight {
+  color: #FFC107; }
 
 .che .navBar {
   background-color: #3F51B5; }
@@ -7723,6 +7736,8 @@ a.button {
   color: #FFFFFF; }
   .che select:focus {
     outline: none; }
+.che .homePage .highlight {
+  color: #FF5252; }
 
 .cpa .navBar {
   background-color: #F44336; }
@@ -7744,6 +7759,8 @@ a.button {
   color: #FFFFFF; }
   .cpa select:focus {
     outline: none; }
+.cpa .homePage .highlight {
+  color: #448AFF; }
 
 .eve .navBar {
   background-color: #3F51B5; }
@@ -7765,6 +7782,8 @@ a.button {
   color: #FFFFFF; }
   .eve select:focus {
     outline: none; }
+.eve .homePage .highlight {
+  color: #448AFF; }
 
 .hul .navBar {
   background-color: #FF9800; }
@@ -7786,6 +7805,8 @@ a.button {
   color: #FFFFFF; }
   .hul select:focus {
     outline: none; }
+.hul .homePage .highlight {
+  color: #FF5722; }
 
 .lei .navBar {
   background-color: #3F51B5; }
@@ -7807,6 +7828,8 @@ a.button {
   color: #FFFFFF; }
   .lei select:focus {
     outline: none; }
+.lei .homePage .highlight {
+  color: #FF9800; }
 
 .liv .navBar {
   background-color: #F44336; }
@@ -7828,6 +7851,8 @@ a.button {
   color: #FFFFFF; }
   .liv select:focus {
     outline: none; }
+.liv .homePage .highlight {
+  color: #009688; }
 
 .mnc .navBar {
   background-color: #03A9F4; }
@@ -7849,6 +7874,8 @@ a.button {
   color: #FFFFFF; }
   .mnc select:focus {
     outline: none; }
+.mnc .homePage .highlight {
+  color: #FFC107; }
 
 .mnu .navBar {
   background-color: #F44336; }
@@ -7860,16 +7887,18 @@ a.button {
     color: #FFFFFF;
     font-weight: 300; }
 .mnu .newsPage .item.item-footer {
-  background-color: #FFEB3B; }
+  background-color: #FF9800; }
 .mnu .socialPage a {
-  color: #FFEB3B; }
+  color: #FF9800; }
 .mnu select {
   border: none;
   border-radius: 0;
-  background-color: #FFEB3B;
+  background-color: #FF9800;
   color: #FFFFFF; }
   .mnu select:focus {
     outline: none; }
+.mnu .homePage .highlight {
+  color: #FF9800; }
 
 .new .navBar {
   background-color: #9E9E9E; }
@@ -7891,6 +7920,8 @@ a.button {
   color: #FFFFFF; }
   .new select:focus {
     outline: none; }
+.new .homePage .highlight {
+  color: #FFC107; }
 
 .qpr .navBar {
   background-color: #2196F3; }
@@ -7912,6 +7943,8 @@ a.button {
   color: #FFFFFF; }
   .qpr select:focus {
     outline: none; }
+.qpr .homePage .highlight {
+  color: #9E9E9E; }
 
 .shm .navBar {
   background-color: #F44336; }
@@ -7933,6 +7966,8 @@ a.button {
   color: #FFFFFF; }
   .shm select:focus {
     outline: none; }
+.shm .homePage .highlight {
+  color: #FFC107; }
 
 .stk .navBar {
   background-color: #F44336; }
@@ -7954,6 +7989,8 @@ a.button {
   color: #FFFFFF; }
   .stk select:focus {
     outline: none; }
+.stk .homePage .highlight {
+  color: #448AFF; }
 
 .sun .navBar {
   background-color: #F44336; }
@@ -7975,6 +8012,8 @@ a.button {
   color: #FFFFFF; }
   .sun select:focus {
     outline: none; }
+.sun .homePage .highlight {
+  color: #FF9800; }
 
 .swa .navBar {
   background-color: #607D8B; }
@@ -7986,16 +8025,18 @@ a.button {
     color: #FFFFFF;
     font-weight: 300; }
 .swa .newsPage .item.item-footer {
-  background-color: #FF5252; }
+  background-color: #FF9800; }
 .swa .socialPage a {
-  color: #FF5252; }
+  color: #FF9800; }
 .swa select {
   border: none;
   border-radius: 0;
-  background-color: #FF5252;
+  background-color: #FF9800;
   color: #FFFFFF; }
   .swa select:focus {
     outline: none; }
+.swa .homePage .highlight {
+  color: #FF9800; }
 
 .tot .navBar {
   background-color: #9E9E9E; }
@@ -8007,16 +8048,18 @@ a.button {
     color: #FFFFFF;
     font-weight: 300; }
 .tot .newsPage .item.item-footer {
-  background-color: #536DFE; }
+  background-color: #3F51B5; }
 .tot .socialPage a {
-  color: #536DFE; }
+  color: #3F51B5; }
 .tot select {
   border: none;
   border-radius: 0;
-  background-color: #536DFE;
+  background-color: #3F51B5;
   color: #FFFFFF; }
   .tot select:focus {
     outline: none; }
+.tot .homePage .highlight {
+  color: #3F51B5; }
 
 .wbm .navBar {
   background-color: #3F51B5; }
@@ -8038,6 +8081,8 @@ a.button {
   color: #FFFFFF; }
   .wbm select:focus {
     outline: none; }
+.wbm .homePage .highlight {
+  color: #9E9E9E; }
 
 .whm .navBar {
   background-color: #673AB7; }
@@ -8059,11 +8104,13 @@ a.button {
   color: #FFFFFF; }
   .whm select:focus {
     outline: none; }
+.whm .homePage .highlight {
+  color: #FFC107; }
 
 .navBar {
   border: none;
   height: 60px;
-  padding: 12px;
+  padding: 10px;
   color: #FFFFFF;
   background-image: none; }
   .navBar .button {
@@ -8071,8 +8118,9 @@ a.button {
     .navBar .button:focus {
       background-color: transparent; }
 
-.bar .title {
-  padding: 5px 0 0 35px; }
+.bar .title.title-left {
+  text-align: center;
+  padding: 3px 0 0 0; }
 
 .buttons.buttons-right.header-item {
   padding-top: 5px; }
@@ -8150,8 +8198,41 @@ a.button {
   .menuClose i {
     font-size: 1.5em; }
 
-.popup-container.favouritePopup.aboutPopup.popup-showing.active .popup {
-  width: 85%; }
+.homeTop {
+  text-align: center;
+  padding-bottom: 0; }
+  .homeTop .row {
+    margin-bottom: 0; }
+  .homeTop img {
+    width: 100%; }
+  .homeTop h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 0px;
+    padding-bottom: 10px; }
+
+.homeBottom {
+  margin-top: 20px; }
+  .homeBottom h2 {
+    font-size: 2em;
+    text-align: center; }
+
+.popup-container.aboutPopup.popup-showing.active .popup {
+  width: 85%;
+  background-color: white;
+  padding: 0 20px 0 20px; }
+  .popup-container.aboutPopup.popup-showing.active .popup h3 {
+    font-size: 1.5em;
+    line-height: 2.5em; }
 
 .popup-container.active .popup {
   box-shadow: 0px 5px 30px 3px rgba(0, 0, 0, 0.3); }
+
+.backdrop.visible {
+  display: block;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.6;
+  background-color: #000000; }
