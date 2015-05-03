@@ -8871,15 +8871,17 @@ hr {
   .menuClose i {
     font-size: 1.5em; }
 
-drawer ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
-  height: 165px;
-  padding-top: 25px; }
-drawer img {
-  width: 50%; }
-drawer .col-66 {
-  padding-left: 5px; }
-drawer p {
-  font-weight: 500; }
+drawer {
+  width: 85% !important; }
+  drawer ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
+    height: 165px;
+    padding-top: 25px; }
+  drawer img {
+    width: 50%; }
+  drawer .col-66 {
+    padding-left: 5px; }
+  drawer p {
+    font-weight: 500; }
 
 .homeTop {
   text-align: center;
