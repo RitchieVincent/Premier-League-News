@@ -18,6 +18,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 $text: #FFFFFF;
 $ptext: #212121;
 $stext: #727272;
+$divider: #E7E7E7;
 //Settings/News/Social----------------------------
 .settingsPage, .newsPage, .socialPage {
     .teamImage {
@@ -76,6 +77,13 @@ $stext: #727272;
 //Team styles----------------------------------
 
 @mixin styles($primary, $dprimary, $lprimary, $accent){
+    h1{
+        color: $text;
+    }
+    h2{
+        color: $ptext;
+        font-weight: 300;
+    }
     .navBar{
         background-color: $primary;
     }
@@ -86,16 +94,21 @@ $stext: #727272;
         .item.item-divider{
             background-color: $dprimary;
             p{
-                color: $text;
+                color: $lprimary;
                 font-weight: 300;
             }
         }
         .item.item-footer{
-            background-color: $accent;
-        }   
+            background-color: $dprimary;
+            color: $accent;
+        }
     }
     .socialPage{
         a{
+            color: $ptext;
+        }
+        .socialTime{
+            font-size: 0.7em;
             color: $accent;
         }
     }
@@ -111,6 +124,25 @@ $stext: #727272;
     .homePage{
         .highlight{
             color: $accent;
+        }
+    }
+    .card{
+        background-color: $dprimary;
+    }
+    .settingsPage{
+        i.icon.ion-android-star {
+            color: $accent;
+            margin-left: 5px;
+        }
+        .item.item-divider {
+            text-align: center;
+        }
+        label {
+            margin-left: 10px;
+        }
+        select.teamSelectBox {
+            margin-left: 40px;
+            width: 80%;
         }
     }
 }
@@ -288,10 +320,22 @@ $stext: #727272;
         }
     }
 }
+ion-header-bar {
+    i {
+        font-size: 1.5em;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .waves-circle{
+        line-height: 1.5em;
+    }
+    i.ion-android-close {
+        margin-right: 0px;
+    }
+}
 
 .bar .title.title-left {
-    text-align: center;
-    padding: 3px 0 0 0;
+    font-size: 1.1em;
 }
 .buttons.buttons-right.header-item {
     padding-top: 5px;
@@ -302,18 +346,16 @@ $stext: #727272;
         margin-top: 20px;
         margin-bottom: 3em;
     }
-    .hideMe{
-        opacity: 0.3;
+    .newsTop{
+        h2{
+            color: darken($text, 15);
+        }
     }
 }
 //Social page------------------------
 .socialPage{
     .item{
         padding: 0;
-        .socialTime{
-            font-size: 0.7em;
-            color: $stext;
-        }
         p{
             padding: 20px 20px 0 20px;
             color: $ptext;
@@ -321,6 +363,9 @@ $stext: #727272;
         p + p{
             padding: 0 20px 20px 20px;
         }
+    }
+    .socialTime{
+        text-align: right;
     }
     .item.item-divider p {
         font-weight: 400;
@@ -334,18 +379,10 @@ $stext: #727272;
     .ion-social-instagram {
         color: #517fa4;
     }
+    .item.item-image {
+        max-height: 200px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
 //Menu---------------------------------
 .greyOut {
     height: 100%;
@@ -365,12 +402,12 @@ $stext: #727272;
 }
 .menuPage {
     overflow-y: hidden;
-    line-height: 2.5em;
+    line-height: 1.5em;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 95px;
     i {
         color: $stext;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .item-complex .item-content {
         padding-bottom: 0;
@@ -386,20 +423,40 @@ $stext: #727272;
         margin-bottom: 0;
     }
     .col-25 {
-        padding: 10px 40px 10px 20px;
+        padding: 10px 40px 10px 15px;
         float: left;
-        line-height: 3em;
+        line-height: 1.5em;
     }
     .col-75 {
         padding: 10px 0 10px 0;
-        line-height: 3.3em;
+        line-height: 1.8em;
+        color: $ptext;
     }
+}
+hr{
+    border: 0;
+    height: 1px !important;
+    background: $divider;
 }
 .menuClose {
     text-align: right;
     padding: 7px 10px 0 0;
     i{
         font-size: 1.5em;
+    }
+}
+drawer {
+    ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
+        height: 140px;
+    }
+    img{
+        width: 50%;
+    }
+    .col-66{
+        padding-left: 5px;
+    }
+    p{
+        font-weight: 500;
     }
 }
 //Home page----------------------
@@ -420,9 +477,11 @@ $stext: #727272;
     padding-bottom: 0;
 }
 .homeBottom{
-    margin-top: 20px;
+    margin-top: -40px;
+    margin-bottom: 60px;
     h2{
-        font-size: 2em;
+        padding-top: 20px;
+        font-size: 1.6em;
         text-align: center;
     }
 }

@@ -10,11 +10,24 @@ angular.module('footFeeds.controllers', [])
 
 .controller('mainController', function ($scope, $ionicPopup) {
 
+    $scope.selectedTeam = JSON.parse(localStorage.getItem('selectedTeam')) || { //Sets the default team, if none is stored
+        label: 'Arsenal',
+        value: 'Arsenal',
+        class: 'ars',
+        image: '../img/arsenal.png',
+        facebook: '@Arsenal',
+        twitter: '@arsenal',
+        instagram: '@arsenal'
+    };
+    team = $scope.selectedTeam;//Sets the default team, if none is stored
+    localStorage.setItem('selectedTeam', JSON.stringify(team));//Sets the default team, if none is stored
+    
+    
     $scope.moreMenu = function () { //The button on the right side of the nav bar displays a pop-up
         var alertPopup = $ionicPopup.alert({
             cssClass: 'aboutPopup', //Assigns classes to the pop-up box for styling
             title: 'About', //The title displayed in the pop-up
-            template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>&#169; FootFeeds 2015</p>', //The text displayed
+            template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>FootFeeds is still in beta, so bugs will exist.</p><p>&#169; FootFeeds 2015</p>', //The text displayed
             okType: 'waves-effect waves btn-flat popupOk' //Classes applied to the 'ok' button in the pop-up
         });
         alertPopup.then(function (res) { //A function that could be run when the pop-up is closed
@@ -222,7 +235,7 @@ angular.module('footFeeds.controllers', [])
         $window.location.reload(true);
     }
     $scope.filter = { //Sets the default filter to the locall stored filter, defaulting to the All filter if none found
-        name: localStorage.filter || '.'
+        name: localStorage.filter || ':'
     };
     $scope.updateFilter = function (filter) {
         localStorage.filter = filter.name;
@@ -249,8 +262,8 @@ angular.module('footFeeds.controllers', [])
 .controller('newsController', ['$scope', 'FeedService', '$ionicLoading', function ($scope, Feed, $ionicLoading) {
     $scope.selectedTeam = JSON.parse(localStorage.getItem('selectedTeam')) || [];
     numFeeds = 5;
-    filter = localStorage.filter || ".";
-    if (filter == ".") {
+    filter = localStorage.filter || ":";
+    if (filter == ":") {
         $scope.selectedFilter = "No filter";
     } else if (filter == "injury") {
         $scope.selectedFilter = "Injuries";
@@ -267,7 +280,7 @@ angular.module('footFeeds.controllers', [])
             template: '<ion-spinner icon="android"></ion-spinner>'
         })
         Feed.parseFeed($scope.feedSrc).then(function (res) {
-            $scope.feeds = res.data.responseData.feed.entries;
+            $scope.feeds = res.data.responseData.feed.entries;//Navigates the returned JSON object and stores the necessary data in scope
             $ionicLoading.hide();
         });
     };
@@ -285,12 +298,6 @@ angular.module('footFeeds.controllers', [])
         return false;
     };
 
-//        $scope.hideCards = function () {
-//            
-//        };
-    $scope.hideCards = function(post){
-        post.read = true;
-    }
 }])
 
 

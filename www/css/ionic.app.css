@@ -7647,6 +7647,11 @@ a.button {
   padding-left: 20px;
   padding-right: 20px; }
 
+.ars h1 {
+  color: #FFFFFF; }
+.ars h2 {
+  color: #212121;
+  font-weight: 300; }
 .ars .navBar {
   background-color: #F44336; }
 .ars .topSection {
@@ -7654,11 +7659,15 @@ a.button {
 .ars .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .ars .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .ars .newsPage .item.item-footer {
-  background-color: #536DFE; }
+  background-color: #D32F2F;
+  color: #536DFE; }
 .ars .socialPage a {
+  color: #212121; }
+.ars .socialPage .socialTime {
+  font-size: 0.7em;
   color: #536DFE; }
 .ars select {
   border: none;
@@ -7669,7 +7678,24 @@ a.button {
     outline: none; }
 .ars .homePage .highlight {
   color: #536DFE; }
+.ars .card {
+  background-color: #D32F2F; }
+.ars .settingsPage i.icon.ion-android-star {
+  color: #536DFE;
+  margin-left: 5px; }
+.ars .settingsPage .item.item-divider {
+  text-align: center; }
+.ars .settingsPage label {
+  margin-left: 10px; }
+.ars .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.avi h1 {
+  color: #FFFFFF; }
+.avi h2 {
+  color: #212121;
+  font-weight: 300; }
 .avi .navBar {
   background-color: #673AB7; }
 .avi .topSection {
@@ -7677,11 +7703,15 @@ a.button {
 .avi .newsPage .item.item-divider {
   background-color: #512DA8; }
   .avi .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #D1C4E9;
     font-weight: 300; }
 .avi .newsPage .item.item-footer {
-  background-color: #448AFF; }
+  background-color: #512DA8;
+  color: #448AFF; }
 .avi .socialPage a {
+  color: #212121; }
+.avi .socialPage .socialTime {
+  font-size: 0.7em;
   color: #448AFF; }
 .avi select {
   border: none;
@@ -7692,7 +7722,24 @@ a.button {
     outline: none; }
 .avi .homePage .highlight {
   color: #448AFF; }
+.avi .card {
+  background-color: #512DA8; }
+.avi .settingsPage i.icon.ion-android-star {
+  color: #448AFF;
+  margin-left: 5px; }
+.avi .settingsPage .item.item-divider {
+  text-align: center; }
+.avi .settingsPage label {
+  margin-left: 10px; }
+.avi .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.bur h1 {
+  color: #FFFFFF; }
+.bur h2 {
+  color: #212121;
+  font-weight: 300; }
 .bur .navBar {
   background-color: #9C27B0; }
 .bur .topSection {
@@ -7700,11 +7747,15 @@ a.button {
 .bur .newsPage .item.item-divider {
   background-color: #7B1FA2; }
   .bur .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #E1BEE7;
     font-weight: 300; }
 .bur .newsPage .item.item-footer {
-  background-color: #FFC107; }
+  background-color: #7B1FA2;
+  color: #FFC107; }
 .bur .socialPage a {
+  color: #212121; }
+.bur .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FFC107; }
 .bur select {
   border: none;
@@ -7715,7 +7766,24 @@ a.button {
     outline: none; }
 .bur .homePage .highlight {
   color: #FFC107; }
+.bur .card {
+  background-color: #7B1FA2; }
+.bur .settingsPage i.icon.ion-android-star {
+  color: #FFC107;
+  margin-left: 5px; }
+.bur .settingsPage .item.item-divider {
+  text-align: center; }
+.bur .settingsPage label {
+  margin-left: 10px; }
+.bur .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.che h1 {
+  color: #FFFFFF; }
+.che h2 {
+  color: #212121;
+  font-weight: 300; }
 .che .navBar {
   background-color: #3F51B5; }
 .che .topSection {
@@ -7723,11 +7791,15 @@ a.button {
 .che .newsPage .item.item-divider {
   background-color: #303F9F; }
   .che .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #C5CAE9;
     font-weight: 300; }
 .che .newsPage .item.item-footer {
-  background-color: #FF5252; }
+  background-color: #303F9F;
+  color: #FF5252; }
 .che .socialPage a {
+  color: #212121; }
+.che .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF5252; }
 .che select {
   border: none;
@@ -7738,7 +7810,24 @@ a.button {
     outline: none; }
 .che .homePage .highlight {
   color: #FF5252; }
+.che .card {
+  background-color: #303F9F; }
+.che .settingsPage i.icon.ion-android-star {
+  color: #FF5252;
+  margin-left: 5px; }
+.che .settingsPage .item.item-divider {
+  text-align: center; }
+.che .settingsPage label {
+  margin-left: 10px; }
+.che .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.cpa h1 {
+  color: #FFFFFF; }
+.cpa h2 {
+  color: #212121;
+  font-weight: 300; }
 .cpa .navBar {
   background-color: #F44336; }
 .cpa .topSection {
@@ -7746,11 +7835,15 @@ a.button {
 .cpa .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .cpa .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .cpa .newsPage .item.item-footer {
-  background-color: #448AFF; }
+  background-color: #D32F2F;
+  color: #448AFF; }
 .cpa .socialPage a {
+  color: #212121; }
+.cpa .socialPage .socialTime {
+  font-size: 0.7em;
   color: #448AFF; }
 .cpa select {
   border: none;
@@ -7761,7 +7854,24 @@ a.button {
     outline: none; }
 .cpa .homePage .highlight {
   color: #448AFF; }
+.cpa .card {
+  background-color: #D32F2F; }
+.cpa .settingsPage i.icon.ion-android-star {
+  color: #448AFF;
+  margin-left: 5px; }
+.cpa .settingsPage .item.item-divider {
+  text-align: center; }
+.cpa .settingsPage label {
+  margin-left: 10px; }
+.cpa .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.eve h1 {
+  color: #FFFFFF; }
+.eve h2 {
+  color: #212121;
+  font-weight: 300; }
 .eve .navBar {
   background-color: #3F51B5; }
 .eve .topSection {
@@ -7769,11 +7879,15 @@ a.button {
 .eve .newsPage .item.item-divider {
   background-color: #303F9F; }
   .eve .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #C5CAE9;
     font-weight: 300; }
 .eve .newsPage .item.item-footer {
-  background-color: #448AFF; }
+  background-color: #303F9F;
+  color: #448AFF; }
 .eve .socialPage a {
+  color: #212121; }
+.eve .socialPage .socialTime {
+  font-size: 0.7em;
   color: #448AFF; }
 .eve select {
   border: none;
@@ -7784,7 +7898,24 @@ a.button {
     outline: none; }
 .eve .homePage .highlight {
   color: #448AFF; }
+.eve .card {
+  background-color: #303F9F; }
+.eve .settingsPage i.icon.ion-android-star {
+  color: #448AFF;
+  margin-left: 5px; }
+.eve .settingsPage .item.item-divider {
+  text-align: center; }
+.eve .settingsPage label {
+  margin-left: 10px; }
+.eve .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.hul h1 {
+  color: #FFFFFF; }
+.hul h2 {
+  color: #212121;
+  font-weight: 300; }
 .hul .navBar {
   background-color: #FF9800; }
 .hul .topSection {
@@ -7792,11 +7923,15 @@ a.button {
 .hul .newsPage .item.item-divider {
   background-color: #F57C00; }
   .hul .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFE0B2;
     font-weight: 300; }
 .hul .newsPage .item.item-footer {
-  background-color: #FF5722; }
+  background-color: #F57C00;
+  color: #FF5722; }
 .hul .socialPage a {
+  color: #212121; }
+.hul .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF5722; }
 .hul select {
   border: none;
@@ -7807,7 +7942,24 @@ a.button {
     outline: none; }
 .hul .homePage .highlight {
   color: #FF5722; }
+.hul .card {
+  background-color: #F57C00; }
+.hul .settingsPage i.icon.ion-android-star {
+  color: #FF5722;
+  margin-left: 5px; }
+.hul .settingsPage .item.item-divider {
+  text-align: center; }
+.hul .settingsPage label {
+  margin-left: 10px; }
+.hul .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.lei h1 {
+  color: #FFFFFF; }
+.lei h2 {
+  color: #212121;
+  font-weight: 300; }
 .lei .navBar {
   background-color: #3F51B5; }
 .lei .topSection {
@@ -7815,11 +7967,15 @@ a.button {
 .lei .newsPage .item.item-divider {
   background-color: #303F9F; }
   .lei .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #C5CAE9;
     font-weight: 300; }
 .lei .newsPage .item.item-footer {
-  background-color: #FF9800; }
+  background-color: #303F9F;
+  color: #FF9800; }
 .lei .socialPage a {
+  color: #212121; }
+.lei .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF9800; }
 .lei select {
   border: none;
@@ -7830,7 +7986,24 @@ a.button {
     outline: none; }
 .lei .homePage .highlight {
   color: #FF9800; }
+.lei .card {
+  background-color: #303F9F; }
+.lei .settingsPage i.icon.ion-android-star {
+  color: #FF9800;
+  margin-left: 5px; }
+.lei .settingsPage .item.item-divider {
+  text-align: center; }
+.lei .settingsPage label {
+  margin-left: 10px; }
+.lei .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.liv h1 {
+  color: #FFFFFF; }
+.liv h2 {
+  color: #212121;
+  font-weight: 300; }
 .liv .navBar {
   background-color: #F44336; }
 .liv .topSection {
@@ -7838,11 +8011,15 @@ a.button {
 .liv .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .liv .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .liv .newsPage .item.item-footer {
-  background-color: #009688; }
+  background-color: #D32F2F;
+  color: #009688; }
 .liv .socialPage a {
+  color: #212121; }
+.liv .socialPage .socialTime {
+  font-size: 0.7em;
   color: #009688; }
 .liv select {
   border: none;
@@ -7853,7 +8030,24 @@ a.button {
     outline: none; }
 .liv .homePage .highlight {
   color: #009688; }
+.liv .card {
+  background-color: #D32F2F; }
+.liv .settingsPage i.icon.ion-android-star {
+  color: #009688;
+  margin-left: 5px; }
+.liv .settingsPage .item.item-divider {
+  text-align: center; }
+.liv .settingsPage label {
+  margin-left: 10px; }
+.liv .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.mnc h1 {
+  color: #FFFFFF; }
+.mnc h2 {
+  color: #212121;
+  font-weight: 300; }
 .mnc .navBar {
   background-color: #03A9F4; }
 .mnc .topSection {
@@ -7861,11 +8055,15 @@ a.button {
 .mnc .newsPage .item.item-divider {
   background-color: #0288D1; }
   .mnc .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #B3E5FC;
     font-weight: 300; }
 .mnc .newsPage .item.item-footer {
-  background-color: #FFC107; }
+  background-color: #0288D1;
+  color: #FFC107; }
 .mnc .socialPage a {
+  color: #212121; }
+.mnc .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FFC107; }
 .mnc select {
   border: none;
@@ -7876,7 +8074,24 @@ a.button {
     outline: none; }
 .mnc .homePage .highlight {
   color: #FFC107; }
+.mnc .card {
+  background-color: #0288D1; }
+.mnc .settingsPage i.icon.ion-android-star {
+  color: #FFC107;
+  margin-left: 5px; }
+.mnc .settingsPage .item.item-divider {
+  text-align: center; }
+.mnc .settingsPage label {
+  margin-left: 10px; }
+.mnc .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.mnu h1 {
+  color: #FFFFFF; }
+.mnu h2 {
+  color: #212121;
+  font-weight: 300; }
 .mnu .navBar {
   background-color: #F44336; }
 .mnu .topSection {
@@ -7884,11 +8099,15 @@ a.button {
 .mnu .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .mnu .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .mnu .newsPage .item.item-footer {
-  background-color: #FF9800; }
+  background-color: #D32F2F;
+  color: #FF9800; }
 .mnu .socialPage a {
+  color: #212121; }
+.mnu .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF9800; }
 .mnu select {
   border: none;
@@ -7899,7 +8118,24 @@ a.button {
     outline: none; }
 .mnu .homePage .highlight {
   color: #FF9800; }
+.mnu .card {
+  background-color: #D32F2F; }
+.mnu .settingsPage i.icon.ion-android-star {
+  color: #FF9800;
+  margin-left: 5px; }
+.mnu .settingsPage .item.item-divider {
+  text-align: center; }
+.mnu .settingsPage label {
+  margin-left: 10px; }
+.mnu .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.new h1 {
+  color: #FFFFFF; }
+.new h2 {
+  color: #212121;
+  font-weight: 300; }
 .new .navBar {
   background-color: #9E9E9E; }
 .new .topSection {
@@ -7907,11 +8143,15 @@ a.button {
 .new .newsPage .item.item-divider {
   background-color: #616161; }
   .new .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #F5F5F5;
     font-weight: 300; }
 .new .newsPage .item.item-footer {
-  background-color: #FFC107; }
+  background-color: #616161;
+  color: #FFC107; }
 .new .socialPage a {
+  color: #212121; }
+.new .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FFC107; }
 .new select {
   border: none;
@@ -7922,7 +8162,24 @@ a.button {
     outline: none; }
 .new .homePage .highlight {
   color: #FFC107; }
+.new .card {
+  background-color: #616161; }
+.new .settingsPage i.icon.ion-android-star {
+  color: #FFC107;
+  margin-left: 5px; }
+.new .settingsPage .item.item-divider {
+  text-align: center; }
+.new .settingsPage label {
+  margin-left: 10px; }
+.new .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.qpr h1 {
+  color: #FFFFFF; }
+.qpr h2 {
+  color: #212121;
+  font-weight: 300; }
 .qpr .navBar {
   background-color: #2196F3; }
 .qpr .topSection {
@@ -7930,11 +8187,15 @@ a.button {
 .qpr .newsPage .item.item-divider {
   background-color: #1976D2; }
   .qpr .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #BBDEFB;
     font-weight: 300; }
 .qpr .newsPage .item.item-footer {
-  background-color: #9E9E9E; }
+  background-color: #1976D2;
+  color: #9E9E9E; }
 .qpr .socialPage a {
+  color: #212121; }
+.qpr .socialPage .socialTime {
+  font-size: 0.7em;
   color: #9E9E9E; }
 .qpr select {
   border: none;
@@ -7945,7 +8206,24 @@ a.button {
     outline: none; }
 .qpr .homePage .highlight {
   color: #9E9E9E; }
+.qpr .card {
+  background-color: #1976D2; }
+.qpr .settingsPage i.icon.ion-android-star {
+  color: #9E9E9E;
+  margin-left: 5px; }
+.qpr .settingsPage .item.item-divider {
+  text-align: center; }
+.qpr .settingsPage label {
+  margin-left: 10px; }
+.qpr .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.shm h1 {
+  color: #FFFFFF; }
+.shm h2 {
+  color: #212121;
+  font-weight: 300; }
 .shm .navBar {
   background-color: #F44336; }
 .shm .topSection {
@@ -7953,11 +8231,15 @@ a.button {
 .shm .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .shm .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .shm .newsPage .item.item-footer {
-  background-color: #FFC107; }
+  background-color: #D32F2F;
+  color: #FFC107; }
 .shm .socialPage a {
+  color: #212121; }
+.shm .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FFC107; }
 .shm select {
   border: none;
@@ -7968,7 +8250,24 @@ a.button {
     outline: none; }
 .shm .homePage .highlight {
   color: #FFC107; }
+.shm .card {
+  background-color: #D32F2F; }
+.shm .settingsPage i.icon.ion-android-star {
+  color: #FFC107;
+  margin-left: 5px; }
+.shm .settingsPage .item.item-divider {
+  text-align: center; }
+.shm .settingsPage label {
+  margin-left: 10px; }
+.shm .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.stk h1 {
+  color: #FFFFFF; }
+.stk h2 {
+  color: #212121;
+  font-weight: 300; }
 .stk .navBar {
   background-color: #F44336; }
 .stk .topSection {
@@ -7976,11 +8275,15 @@ a.button {
 .stk .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .stk .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .stk .newsPage .item.item-footer {
-  background-color: #448AFF; }
+  background-color: #D32F2F;
+  color: #448AFF; }
 .stk .socialPage a {
+  color: #212121; }
+.stk .socialPage .socialTime {
+  font-size: 0.7em;
   color: #448AFF; }
 .stk select {
   border: none;
@@ -7991,7 +8294,24 @@ a.button {
     outline: none; }
 .stk .homePage .highlight {
   color: #448AFF; }
+.stk .card {
+  background-color: #D32F2F; }
+.stk .settingsPage i.icon.ion-android-star {
+  color: #448AFF;
+  margin-left: 5px; }
+.stk .settingsPage .item.item-divider {
+  text-align: center; }
+.stk .settingsPage label {
+  margin-left: 10px; }
+.stk .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.sun h1 {
+  color: #FFFFFF; }
+.sun h2 {
+  color: #212121;
+  font-weight: 300; }
 .sun .navBar {
   background-color: #F44336; }
 .sun .topSection {
@@ -7999,11 +8319,15 @@ a.button {
 .sun .newsPage .item.item-divider {
   background-color: #D32F2F; }
   .sun .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #FFCDD2;
     font-weight: 300; }
 .sun .newsPage .item.item-footer {
-  background-color: #FF9800; }
+  background-color: #D32F2F;
+  color: #FF9800; }
 .sun .socialPage a {
+  color: #212121; }
+.sun .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF9800; }
 .sun select {
   border: none;
@@ -8014,7 +8338,24 @@ a.button {
     outline: none; }
 .sun .homePage .highlight {
   color: #FF9800; }
+.sun .card {
+  background-color: #D32F2F; }
+.sun .settingsPage i.icon.ion-android-star {
+  color: #FF9800;
+  margin-left: 5px; }
+.sun .settingsPage .item.item-divider {
+  text-align: center; }
+.sun .settingsPage label {
+  margin-left: 10px; }
+.sun .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.swa h1 {
+  color: #FFFFFF; }
+.swa h2 {
+  color: #212121;
+  font-weight: 300; }
 .swa .navBar {
   background-color: #607D8B; }
 .swa .topSection {
@@ -8022,11 +8363,15 @@ a.button {
 .swa .newsPage .item.item-divider {
   background-color: #455A64; }
   .swa .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #CFD8DC;
     font-weight: 300; }
 .swa .newsPage .item.item-footer {
-  background-color: #FF9800; }
+  background-color: #455A64;
+  color: #FF9800; }
 .swa .socialPage a {
+  color: #212121; }
+.swa .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FF9800; }
 .swa select {
   border: none;
@@ -8037,7 +8382,24 @@ a.button {
     outline: none; }
 .swa .homePage .highlight {
   color: #FF9800; }
+.swa .card {
+  background-color: #455A64; }
+.swa .settingsPage i.icon.ion-android-star {
+  color: #FF9800;
+  margin-left: 5px; }
+.swa .settingsPage .item.item-divider {
+  text-align: center; }
+.swa .settingsPage label {
+  margin-left: 10px; }
+.swa .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.tot h1 {
+  color: #FFFFFF; }
+.tot h2 {
+  color: #212121;
+  font-weight: 300; }
 .tot .navBar {
   background-color: #9E9E9E; }
 .tot .topSection {
@@ -8045,11 +8407,15 @@ a.button {
 .tot .newsPage .item.item-divider {
   background-color: #616161; }
   .tot .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #F5F5F5;
     font-weight: 300; }
 .tot .newsPage .item.item-footer {
-  background-color: #3F51B5; }
+  background-color: #616161;
+  color: #3F51B5; }
 .tot .socialPage a {
+  color: #212121; }
+.tot .socialPage .socialTime {
+  font-size: 0.7em;
   color: #3F51B5; }
 .tot select {
   border: none;
@@ -8060,7 +8426,24 @@ a.button {
     outline: none; }
 .tot .homePage .highlight {
   color: #3F51B5; }
+.tot .card {
+  background-color: #616161; }
+.tot .settingsPage i.icon.ion-android-star {
+  color: #3F51B5;
+  margin-left: 5px; }
+.tot .settingsPage .item.item-divider {
+  text-align: center; }
+.tot .settingsPage label {
+  margin-left: 10px; }
+.tot .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.wbm h1 {
+  color: #FFFFFF; }
+.wbm h2 {
+  color: #212121;
+  font-weight: 300; }
 .wbm .navBar {
   background-color: #3F51B5; }
 .wbm .topSection {
@@ -8068,11 +8451,15 @@ a.button {
 .wbm .newsPage .item.item-divider {
   background-color: #303F9F; }
   .wbm .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #C5CAE9;
     font-weight: 300; }
 .wbm .newsPage .item.item-footer {
-  background-color: #9E9E9E; }
+  background-color: #303F9F;
+  color: #9E9E9E; }
 .wbm .socialPage a {
+  color: #212121; }
+.wbm .socialPage .socialTime {
+  font-size: 0.7em;
   color: #9E9E9E; }
 .wbm select {
   border: none;
@@ -8083,7 +8470,24 @@ a.button {
     outline: none; }
 .wbm .homePage .highlight {
   color: #9E9E9E; }
+.wbm .card {
+  background-color: #303F9F; }
+.wbm .settingsPage i.icon.ion-android-star {
+  color: #9E9E9E;
+  margin-left: 5px; }
+.wbm .settingsPage .item.item-divider {
+  text-align: center; }
+.wbm .settingsPage label {
+  margin-left: 10px; }
+.wbm .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
+.whm h1 {
+  color: #FFFFFF; }
+.whm h2 {
+  color: #212121;
+  font-weight: 300; }
 .whm .navBar {
   background-color: #673AB7; }
 .whm .topSection {
@@ -8091,11 +8495,15 @@ a.button {
 .whm .newsPage .item.item-divider {
   background-color: #512DA8; }
   .whm .newsPage .item.item-divider p {
-    color: #FFFFFF;
+    color: #D1C4E9;
     font-weight: 300; }
 .whm .newsPage .item.item-footer {
-  background-color: #FFC107; }
+  background-color: #512DA8;
+  color: #FFC107; }
 .whm .socialPage a {
+  color: #212121; }
+.whm .socialPage .socialTime {
+  font-size: 0.7em;
   color: #FFC107; }
 .whm select {
   border: none;
@@ -8106,6 +8514,18 @@ a.button {
     outline: none; }
 .whm .homePage .highlight {
   color: #FFC107; }
+.whm .card {
+  background-color: #512DA8; }
+.whm .settingsPage i.icon.ion-android-star {
+  color: #FFC107;
+  margin-left: 5px; }
+.whm .settingsPage .item.item-divider {
+  text-align: center; }
+.whm .settingsPage label {
+  margin-left: 10px; }
+.whm .settingsPage select.teamSelectBox {
+  margin-left: 40px;
+  width: 80%; }
 
 .navBar {
   border: none;
@@ -8118,9 +8538,17 @@ a.button {
     .navBar .button:focus {
       background-color: transparent; }
 
+ion-header-bar i {
+  font-size: 1.5em;
+  margin-left: -15px;
+  margin-right: -15px; }
+ion-header-bar .waves-circle {
+  line-height: 1.5em; }
+ion-header-bar i.ion-android-close {
+  margin-right: 0px; }
+
 .bar .title.title-left {
-  text-align: center;
-  padding: 3px 0 0 0; }
+  font-size: 1.1em; }
 
 .buttons.buttons-right.header-item {
   padding-top: 5px; }
@@ -8128,19 +8556,18 @@ a.button {
 .newsPage .newsBottom {
   margin-top: 20px;
   margin-bottom: 3em; }
-.newsPage .hideMe {
-  opacity: 0.3; }
+.newsPage .newsTop h2 {
+  color: #d9d9d9; }
 
 .socialPage .item {
   padding: 0; }
-  .socialPage .item .socialTime {
-    font-size: 0.7em;
-    color: #727272; }
   .socialPage .item p {
     padding: 20px 20px 0 20px;
     color: #212121; }
   .socialPage .item p + p {
     padding: 0 20px 20px 20px; }
+.socialPage .socialTime {
+  text-align: right; }
 .socialPage .item.item-divider p {
   font-weight: 400; }
 .socialPage .ion-social-facebook {
@@ -8149,6 +8576,8 @@ a.button {
   color: #00aced; }
 .socialPage .ion-social-instagram {
   color: #517fa4; }
+.socialPage .item.item-image {
+  max-height: 200px; }
 
 .greyOut {
   height: 100%;
@@ -8168,12 +8597,12 @@ a.button {
 
 .menuPage {
   overflow-y: hidden;
-  line-height: 2.5em;
+  line-height: 1.5em;
   font-weight: 500;
-  margin-top: 15px; }
+  margin-top: 95px; }
   .menuPage i {
     color: #727272;
-    font-size: 1.5em; }
+    font-size: 1.3em; }
   .menuPage .item-complex .item-content {
     padding-bottom: 0;
     padding-top: 0;
@@ -8185,18 +8614,33 @@ a.button {
   .menuPage .row {
     margin-bottom: 0; }
   .menuPage .col-25 {
-    padding: 10px 40px 10px 20px;
+    padding: 10px 40px 10px 15px;
     float: left;
-    line-height: 3em; }
+    line-height: 1.5em; }
   .menuPage .col-75 {
     padding: 10px 0 10px 0;
-    line-height: 3.3em; }
+    line-height: 1.8em;
+    color: #212121; }
+
+hr {
+  border: 0;
+  height: 1px !important;
+  background: #E7E7E7; }
 
 .menuClose {
   text-align: right;
   padding: 7px 10px 0 0; }
   .menuClose i {
     font-size: 1.5em; }
+
+drawer ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
+  height: 140px; }
+drawer img {
+  width: 50%; }
+drawer .col-66 {
+  padding-left: 5px; }
+drawer p {
+  font-weight: 500; }
 
 .homeTop {
   text-align: center;
@@ -8212,9 +8656,11 @@ a.button {
     padding-bottom: 10px; }
 
 .homeBottom {
-  margin-top: 20px; }
+  margin-top: -40px;
+  margin-bottom: 60px; }
   .homeBottom h2 {
-    font-size: 2em;
+    padding-top: 20px;
+    font-size: 1.6em;
     text-align: center; }
 
 .popup-container.aboutPopup.popup-showing.active .popup {

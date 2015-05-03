@@ -9,7 +9,7 @@
             <h2>Selected filter: {{selectedFilter}}</h2>
         </div>
         <div class="bottomSection newsBottom">
-            <div class="card" ng-repeat="feed in feeds | filter:filterText" ng-click="hideCards(post)" ng-class="{hideMe: post.read}">
+            <div class="card" ng-repeat="feed in feeds | filter:filterText">
                 <div class="item item-divider">
                     <p class="newsTitle">{{feed.title}}</p>
                 </div>
@@ -19,7 +19,7 @@
                     </div>
                 </a>
                 <div class="item item-divider item-footer">
-                    <p class="newsDate">{{feed.publishedDate}}</p>
+                    <p class="newsDate">{{feed.publishedDate | limitTo:16}}</p>
                 </div>
             </div>
         </div>
