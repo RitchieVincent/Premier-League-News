@@ -7,6 +7,16 @@
             </div>
             <h1>{{selectedTeam.value}}</h1>
         </div>
-        <div class="social-feed-container"></div>
+        <div class="socialBottom">
+            <h2>Image feed</h2>
+            <div class="switch">
+                <label>
+                    Off
+                    <input type="checkbox" ng-model="isChecked">
+                    <span class="lever"></span> On
+                </label>
+            </div>
+        </div>
+        <div class="social-feed-container" ng-class="{noImage : isChecked}"></div>
     </ion-content>
 </ion-view>

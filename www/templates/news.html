@@ -2,26 +2,24 @@
     <ion-content class="newsPage" ng-class="selectedTeam.class">
         <ion-refresher on-refresh="doRefresh()" pulling-icon="ion-android-arrow-down"></ion-refresher>
         <div class="topSection newsTop">
-            <div class="row teamImage">
-                <img src="{{selectedTeam.image}}" alt="Selected team's logo">
+            <div class="item item-divider">
+                <div class="row teamImage">
+                    <img src="{{selectedTeam.image}}" alt="Selected team's logo">
+                </div>
+                <h1>{{selectedTeam.value}}</h1>
+                <h2>Selected filter: {{selectedFilter}}</h2>
             </div>
-            <h1>{{selectedTeam.value}}</h1>
-            <h2>Selected filter: {{selectedFilter}}</h2>
         </div>
         <div class="bottomSection newsBottom">
-            <div class="card" ng-repeat="feed in feeds | filter:filterText">
-                <div class="item item-divider">
-                    <p class="newsTitle">{{feed.title}}</p>
-                </div>
-                <a href="#" ng-click="openLink('{{feed.link}}')">
-                    <div class="item item-text-wrap">
+            <ul class="list">
+                <li class="item" ng-repeat="feed in feeds | filter:filterText">
+                    <a href="#" ng-click="openLink('{{feed.link}}')">
+                        <h3 class="newsTitle">{{feed.title}}</h3>
                         <p class="newsContent">{{feed.contentSnippet}}</p>
-                    </div>
-                </a>
-                <div class="item item-divider item-footer">
-                    <p class="newsDate">{{feed.publishedDate | limitTo:16}}</p>
-                </div>
-            </div>
+                        <p class="newsDate">{{feed.publishedDate | limitTo:16}}</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </ion-content>
 </ion-view>

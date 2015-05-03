@@ -6,46 +6,38 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 //    background-color: red;
 //}
 //Mixins---------------------------------------
-@mixin contentPadding(){
-    padding-left: 20px;
-    padding-right: 20px;
-}
 @mixin topPadding(){
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 0;
 }
 //Var------------------------------------------
 $text: #FFFFFF;
 $ptext: #212121;
 $stext: #727272;
 $divider: #E7E7E7;
+$bgColour: #ECECEC;
 //Settings/News/Social----------------------------
 .settingsPage, .newsPage, .socialPage {
-    .teamImage {
-        margin-bottom: 0;
-        height: 120px;
-        width: 120px;
-    }
     .teamImage img {
-        margin: 0 auto;
+        margin-bottom: 0;
+        height: 55px;
+        width: 55px;
     }
     h1 {
-        text-align: center;
         color: $text;
+        font-size: 1.5em;
+        line-height: 1.5em;
         margin: 0;
-        font-size: 2.5em;
-        line-height: 1em;
-        padding-bottom: 20px;
     }
     h2 {
         color: $ptext;
         font-size: 1em;
         line-height: 1em;
-        text-align: center;
         margin: 0;
     }
     .settingsBottom{
         margin-top: 20px;
+        margin-bottom: 60px;
         .item{
             padding: 10px;
         }
@@ -67,40 +59,77 @@ $divider: #E7E7E7;
 //All pages------------------------------------
 .settingsPage, .newsPage, .socialPage, .homePage, .helpPage{
     margin-top: -11px;
+    background-color: $bgColour;
 }
 .topSection{
     @include topPadding();
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        color: $stext;
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    .teamImage{
+        margin: 0;
+        img{
+            margin: 0 auto;
+        }
+    }
+    .item-divider{
+        background-color: $bgColour;
+        border-top: none;
+    }
 }
-.bottomSection{
-    @include contentPadding();
+
+[nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+    background: transparent;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
+
 //Team styles----------------------------------
 
 @mixin styles($primary, $dprimary, $lprimary, $accent){
-    h1{
-        color: $text;
-    }
-    h2{
-        color: $ptext;
-        font-weight: 300;
-    }
     .navBar{
         background-color: $primary;
     }
-    .topSection {
-        background-color: $primary;
+    .topSection{
+        h1{
+            color: $accent;
+        }
     }
     .newsPage{
-        .item.item-divider{
-            background-color: $dprimary;
-            p{
-                color: $lprimary;
-                font-weight: 300;
+        .newsBottom{
+            .item.item-divider{
+                background-color: $dprimary;
+                p{
+                    color: $lprimary;
+                    font-weight: 300;
+                }
+            }
+            h3{
+                color: $dprimary;
+                font-size: 1em;
+            }
+            a{
+                font-weight: 400;
+                color: $stext;
+            }
+            .newsDate{
+                color: $accent;
+                font-size: 0.7em;
+                font-weight: 500;
+            }
+            .item, .item p, .item h3 {
+                white-space: normal;
             }
         }
         .item.item-footer{
             background-color: $dprimary;
-            color: $accent;
         }
     }
     .socialPage{
@@ -350,12 +379,13 @@ ion-header-bar {
 //News page---------------------------
 .newsPage{
     .newsBottom{
-        margin-top: 20px;
-        margin-bottom: 3em;
-    }
-    .newsTop{
-        h2{
-            color: darken($text, 15);
+        margin-top: 10px;
+        margin-bottom: 2em;
+        padding-left: 0px;
+        padding-right: 0px;
+        h3{
+            font-size: 1.2em;
+            line-height: 1.2em;
         }
     }
 }
@@ -387,8 +417,26 @@ ion-header-bar {
         color: #517fa4;
     }
     .item.item-image {
-        max-height: 200px;
+        max-height: 300px;
     }
+    .socialBottom{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+.noImage{ 
+    .socialInfo{
+        display: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .card{
+        margin: 0;
+    }
+}
+.social-feed-container.noImage {
+    margin-top: 9px;
 }
 //Menu---------------------------------
 .greyOut {
