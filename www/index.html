@@ -12,6 +12,7 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -42,7 +43,7 @@
     <script src="js/jquery.socialfeed.js"></script>
 </head>
 
-<body>
+    <body ng-class="{'has-translucent-status-bar': window.screen.height === window.innerHeight}">
     <ion-nav-view></ion-nav-view>
 </body>
 

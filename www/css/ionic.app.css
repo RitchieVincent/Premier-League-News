@@ -7633,7 +7633,7 @@ a.button {
   color: #212121; }
 
 .settingsPage, .newsPage, .socialPage, .homePage, .helpPage {
-  margin-top: -11px;
+  margin-top: 15px;
   background-color: #ECECEC; }
 
 .homePage, .helpPage {
@@ -8746,7 +8746,7 @@ a.button {
 
 .navBar {
   border: none;
-  height: 60px;
+  height: 85px;
   padding: 10px;
   color: #FFFFFF;
   background-image: none; }
@@ -8758,14 +8758,17 @@ a.button {
 ion-header-bar i {
   font-size: 1.5em;
   margin-left: -15px;
-  margin-right: -15px; }
+  margin-right: -15px;
+  padding-top: 25px; }
 ion-header-bar .waves-circle {
   line-height: 1.5em; }
 ion-header-bar i.ion-android-close {
   margin-right: 0px; }
 
 .bar .title.title-left {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  padding-top: 25px;
+  height: 85px; }
 
 .buttons.buttons-right.header-item {
   padding-top: 5px; }
@@ -8833,7 +8836,8 @@ ion-header-bar i.ion-android-close {
   overflow-y: hidden;
   line-height: 1.5em;
   font-weight: 500;
-  margin-top: 95px; }
+  margin-top: 95px;
+  padding-top: 25px; }
   .menuPage i {
     color: #727272;
     font-size: 1.3em; }
@@ -8868,7 +8872,8 @@ hr {
     font-size: 1.5em; }
 
 drawer ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
-  height: 140px; }
+  height: 165px;
+  padding-top: 25px; }
 drawer img {
   width: 50%; }
 drawer .col-66 {

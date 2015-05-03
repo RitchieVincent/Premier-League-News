@@ -5,7 +5,7 @@
         An Ionic Framework and Cordova project.
     </description>
   <author email="ritchie@ritchievincent.co.uk" href="http://ritchievincent.co.uk">
-      Ritchie Vincent
+        Ritchie Vincent
     </author>
   <content src="index.html"/>
   <access origin="*"/>
@@ -14,12 +14,14 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="orientation" value="portrait"/>
   <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="orientation" value="portrait"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
   <platform name="android">
+    <peference name="Fullscreen" value="true"/>
+    <preference name="StatusBarOverlaysWebView" value="true"/>
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
     <icon src="resources/android/icon/drawable-hdpi-icon.png" density="hdpi"/>

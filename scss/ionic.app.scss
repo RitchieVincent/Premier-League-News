@@ -58,7 +58,7 @@ $bgColour: #ECECEC;
 
 //Multiple pages------------------------------------
 .settingsPage, .newsPage, .socialPage, .homePage, .helpPage{
-    margin-top: -11px;
+    margin-top: 15px;
     background-color: $bgColour;
 }
 .homePage, .helpPage{
@@ -349,7 +349,7 @@ $bgColour: #ECECEC;
 //Navbar-----------------------------
 .navBar {
     border: none;
-    height: 60px;
+    height: 85px;
     padding: 10px;
     color: $text;
     background-image: none;
@@ -365,6 +365,7 @@ ion-header-bar {
         font-size: 1.5em;
         margin-left: -15px;
         margin-right: -15px;
+        padding-top: 25px;
     }
     .waves-circle{
         line-height: 1.5em;
@@ -376,9 +377,14 @@ ion-header-bar {
 
 .bar .title.title-left {
     font-size: 1.1em;
+    padding-top: 25px;
+    height: 85px;
 }
 .buttons.buttons-right.header-item {
     padding-top: 5px;
+}
+.platform-android.has-translucent-status-bar ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
+//padding-top: 25px;
 }
 //News page---------------------------
 .newsPage{
@@ -464,6 +470,7 @@ ion-header-bar {
     line-height: 1.5em;
     font-weight: 500;
     margin-top: 95px;
+    padding-top: 25px;
     i {
         color: $stext;
         font-size: 1.3em;
@@ -506,7 +513,8 @@ hr{
 }
 drawer {
     ion-header-bar.navBar.bar.bar-header.disable-user-behavior {
-        height: 140px;
+        height: 165px;
+        padding-top: 25px;
     }
     img{
         width: 50%;
