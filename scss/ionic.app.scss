@@ -37,7 +37,7 @@ $bgColour: #ECECEC;
     }
     .settingsBottom{
         margin-top: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 10px;
         .item{
             padding: 10px;
         }
@@ -56,10 +56,14 @@ $bgColour: #ECECEC;
 }
 
 
-//All pages------------------------------------
+//Multiple pages------------------------------------
 .settingsPage, .newsPage, .socialPage, .homePage, .helpPage{
     margin-top: -11px;
     background-color: $bgColour;
+}
+.homePage, .helpPage{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .topSection{
     @include topPadding();
@@ -534,9 +538,12 @@ drawer {
 .homeBottom{
     margin-top: -40px;
     margin-bottom: 60px;
+    img{
+//        width: 200px;
+    }
     h2{
         padding-top: 20px;
-        font-size: 1.6em;
+        font-size: 1.5em;
         text-align: center;
     }
 }

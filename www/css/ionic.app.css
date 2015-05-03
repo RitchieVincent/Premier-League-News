@@ -7619,7 +7619,7 @@ a.button {
   margin: 0; }
 .settingsPage .settingsBottom, .newsPage .settingsBottom, .socialPage .settingsBottom {
   margin-top: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 10px; }
   .settingsPage .settingsBottom .item, .newsPage .settingsBottom .item, .socialPage .settingsBottom .item {
     padding: 10px; }
 .settingsPage select, .newsPage select, .socialPage select {
@@ -7635,6 +7635,10 @@ a.button {
 .settingsPage, .newsPage, .socialPage, .homePage, .helpPage {
   margin-top: -11px;
   background-color: #ECECEC; }
+
+.homePage, .helpPage {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .topSection {
   padding-top: 5px;
@@ -8890,7 +8894,7 @@ drawer p {
   margin-bottom: 60px; }
   .homeBottom h2 {
     padding-top: 20px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-align: center; }
 
 .helpPage h1 {
