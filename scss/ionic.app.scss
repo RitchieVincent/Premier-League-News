@@ -65,7 +65,7 @@ $divider: #E7E7E7;
 
 
 //All pages------------------------------------
-.settingsPage, .newsPage, .socialPage, .homePage{
+.settingsPage, .newsPage, .socialPage, .homePage, .helpPage{
     margin-top: -11px;
 }
 .topSection{
@@ -124,6 +124,13 @@ $divider: #E7E7E7;
     .homePage{
         .highlight{
             color: $accent;
+        }
+    }
+    .helpPage{
+        h2{
+            font-size: 1.5em;
+            color: $accent;
+            margin-bottom: -5px;
         }
     }
     .card{
@@ -485,7 +492,21 @@ drawer {
         text-align: center;
     }
 }
-
+//Help page---------------------
+.helpPage{
+    h1{
+        text-align: center;
+        font-size: 3em;
+        font-weight: 400;
+    }
+    .helpBottom{
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+    .copyrightText{
+        font-size: 0.6em;
+    }
+}
 
 //Popup----------------------
 .popup-container.aboutPopup.popup-showing.active .popup {

@@ -7636,7 +7636,7 @@ a.button {
 [type="radio"] + label {
   color: #212121; }
 
-.settingsPage, .newsPage, .socialPage, .homePage {
+.settingsPage, .newsPage, .socialPage, .homePage, .helpPage {
   margin-top: -11px; }
 
 .topSection {
@@ -7678,6 +7678,10 @@ a.button {
     outline: none; }
 .ars .homePage .highlight {
   color: #536DFE; }
+.ars .helpPage h2 {
+  font-size: 1.5em;
+  color: #536DFE;
+  margin-bottom: -5px; }
 .ars .card {
   background-color: #D32F2F; }
 .ars .settingsPage i.icon.ion-android-star {
@@ -7722,6 +7726,10 @@ a.button {
     outline: none; }
 .avi .homePage .highlight {
   color: #448AFF; }
+.avi .helpPage h2 {
+  font-size: 1.5em;
+  color: #448AFF;
+  margin-bottom: -5px; }
 .avi .card {
   background-color: #512DA8; }
 .avi .settingsPage i.icon.ion-android-star {
@@ -7766,6 +7774,10 @@ a.button {
     outline: none; }
 .bur .homePage .highlight {
   color: #FFC107; }
+.bur .helpPage h2 {
+  font-size: 1.5em;
+  color: #FFC107;
+  margin-bottom: -5px; }
 .bur .card {
   background-color: #7B1FA2; }
 .bur .settingsPage i.icon.ion-android-star {
@@ -7810,6 +7822,10 @@ a.button {
     outline: none; }
 .che .homePage .highlight {
   color: #FF5252; }
+.che .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF5252;
+  margin-bottom: -5px; }
 .che .card {
   background-color: #303F9F; }
 .che .settingsPage i.icon.ion-android-star {
@@ -7854,6 +7870,10 @@ a.button {
     outline: none; }
 .cpa .homePage .highlight {
   color: #448AFF; }
+.cpa .helpPage h2 {
+  font-size: 1.5em;
+  color: #448AFF;
+  margin-bottom: -5px; }
 .cpa .card {
   background-color: #D32F2F; }
 .cpa .settingsPage i.icon.ion-android-star {
@@ -7898,6 +7918,10 @@ a.button {
     outline: none; }
 .eve .homePage .highlight {
   color: #448AFF; }
+.eve .helpPage h2 {
+  font-size: 1.5em;
+  color: #448AFF;
+  margin-bottom: -5px; }
 .eve .card {
   background-color: #303F9F; }
 .eve .settingsPage i.icon.ion-android-star {
@@ -7942,6 +7966,10 @@ a.button {
     outline: none; }
 .hul .homePage .highlight {
   color: #FF5722; }
+.hul .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF5722;
+  margin-bottom: -5px; }
 .hul .card {
   background-color: #F57C00; }
 .hul .settingsPage i.icon.ion-android-star {
@@ -7986,6 +8014,10 @@ a.button {
     outline: none; }
 .lei .homePage .highlight {
   color: #FF9800; }
+.lei .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF9800;
+  margin-bottom: -5px; }
 .lei .card {
   background-color: #303F9F; }
 .lei .settingsPage i.icon.ion-android-star {
@@ -8030,6 +8062,10 @@ a.button {
     outline: none; }
 .liv .homePage .highlight {
   color: #009688; }
+.liv .helpPage h2 {
+  font-size: 1.5em;
+  color: #009688;
+  margin-bottom: -5px; }
 .liv .card {
   background-color: #D32F2F; }
 .liv .settingsPage i.icon.ion-android-star {
@@ -8074,6 +8110,10 @@ a.button {
     outline: none; }
 .mnc .homePage .highlight {
   color: #FFC107; }
+.mnc .helpPage h2 {
+  font-size: 1.5em;
+  color: #FFC107;
+  margin-bottom: -5px; }
 .mnc .card {
   background-color: #0288D1; }
 .mnc .settingsPage i.icon.ion-android-star {
@@ -8118,6 +8158,10 @@ a.button {
     outline: none; }
 .mnu .homePage .highlight {
   color: #FF9800; }
+.mnu .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF9800;
+  margin-bottom: -5px; }
 .mnu .card {
   background-color: #D32F2F; }
 .mnu .settingsPage i.icon.ion-android-star {
@@ -8162,6 +8206,10 @@ a.button {
     outline: none; }
 .new .homePage .highlight {
   color: #FFC107; }
+.new .helpPage h2 {
+  font-size: 1.5em;
+  color: #FFC107;
+  margin-bottom: -5px; }
 .new .card {
   background-color: #616161; }
 .new .settingsPage i.icon.ion-android-star {
@@ -8206,6 +8254,10 @@ a.button {
     outline: none; }
 .qpr .homePage .highlight {
   color: #9E9E9E; }
+.qpr .helpPage h2 {
+  font-size: 1.5em;
+  color: #9E9E9E;
+  margin-bottom: -5px; }
 .qpr .card {
   background-color: #1976D2; }
 .qpr .settingsPage i.icon.ion-android-star {
@@ -8250,6 +8302,10 @@ a.button {
     outline: none; }
 .shm .homePage .highlight {
   color: #FFC107; }
+.shm .helpPage h2 {
+  font-size: 1.5em;
+  color: #FFC107;
+  margin-bottom: -5px; }
 .shm .card {
   background-color: #D32F2F; }
 .shm .settingsPage i.icon.ion-android-star {
@@ -8294,6 +8350,10 @@ a.button {
     outline: none; }
 .stk .homePage .highlight {
   color: #448AFF; }
+.stk .helpPage h2 {
+  font-size: 1.5em;
+  color: #448AFF;
+  margin-bottom: -5px; }
 .stk .card {
   background-color: #D32F2F; }
 .stk .settingsPage i.icon.ion-android-star {
@@ -8338,6 +8398,10 @@ a.button {
     outline: none; }
 .sun .homePage .highlight {
   color: #FF9800; }
+.sun .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF9800;
+  margin-bottom: -5px; }
 .sun .card {
   background-color: #D32F2F; }
 .sun .settingsPage i.icon.ion-android-star {
@@ -8382,6 +8446,10 @@ a.button {
     outline: none; }
 .swa .homePage .highlight {
   color: #FF9800; }
+.swa .helpPage h2 {
+  font-size: 1.5em;
+  color: #FF9800;
+  margin-bottom: -5px; }
 .swa .card {
   background-color: #455A64; }
 .swa .settingsPage i.icon.ion-android-star {
@@ -8426,6 +8494,10 @@ a.button {
     outline: none; }
 .tot .homePage .highlight {
   color: #3F51B5; }
+.tot .helpPage h2 {
+  font-size: 1.5em;
+  color: #3F51B5;
+  margin-bottom: -5px; }
 .tot .card {
   background-color: #616161; }
 .tot .settingsPage i.icon.ion-android-star {
@@ -8470,6 +8542,10 @@ a.button {
     outline: none; }
 .wbm .homePage .highlight {
   color: #9E9E9E; }
+.wbm .helpPage h2 {
+  font-size: 1.5em;
+  color: #9E9E9E;
+  margin-bottom: -5px; }
 .wbm .card {
   background-color: #303F9F; }
 .wbm .settingsPage i.icon.ion-android-star {
@@ -8514,6 +8590,10 @@ a.button {
     outline: none; }
 .whm .homePage .highlight {
   color: #FFC107; }
+.whm .helpPage h2 {
+  font-size: 1.5em;
+  color: #FFC107;
+  margin-bottom: -5px; }
 .whm .card {
   background-color: #512DA8; }
 .whm .settingsPage i.icon.ion-android-star {
@@ -8662,6 +8742,16 @@ drawer p {
     padding-top: 20px;
     font-size: 1.6em;
     text-align: center; }
+
+.helpPage h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400; }
+.helpPage .helpBottom {
+  margin-top: 10px;
+  margin-bottom: 60px; }
+.helpPage .copyrightText {
+  font-size: 0.6em; }
 
 .popup-container.aboutPopup.popup-showing.active .popup {
   width: 85%;

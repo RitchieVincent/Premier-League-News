@@ -27,7 +27,7 @@ angular.module('footFeeds.controllers', [])
         var alertPopup = $ionicPopup.alert({
             cssClass: 'aboutPopup', //Assigns classes to the pop-up box for styling
             title: 'About', //The title displayed in the pop-up
-            template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>FootFeeds is still in beta, so bugs will exist.</p><p>&#169; FootFeeds 2015</p>', //The text displayed
+            template: '<p>Ritchie Vincent</p><p>ritchie@ritchievincent.co.uk</p><p>Created using the Ionic framework.</p><p>Footfeeds(BETA) v0.1</p><p>&#169; FootFeeds 2015</p>', //The text displayed
             okType: 'waves-effect waves btn-flat popupOk' //Classes applied to the 'ok' button in the pop-up
         });
         alertPopup.then(function (res) { //A function that could be run when the pop-up is closed
