@@ -7705,6 +7705,8 @@ a.button {
   font-size: 1.5em;
   color: #536DFE;
   margin-bottom: -5px; }
+.ars .helpPage .ion-android-create {
+  color: #536DFE; }
 .ars .card {
   background-color: #D32F2F; }
 .ars .settingsPage i.icon.ion-android-star {
@@ -7818,6 +7820,8 @@ a.button {
   font-size: 1.5em;
   color: #448AFF;
   margin-bottom: -5px; }
+.avi .helpPage .ion-android-create {
+  color: #448AFF; }
 .avi .card {
   background-color: #512DA8; }
 .avi .settingsPage i.icon.ion-android-star {
@@ -7931,6 +7935,8 @@ a.button {
   font-size: 1.5em;
   color: #FFC107;
   margin-bottom: -5px; }
+.bur .helpPage .ion-android-create {
+  color: #FFC107; }
 .bur .card {
   background-color: #7B1FA2; }
 .bur .settingsPage i.icon.ion-android-star {
@@ -8044,6 +8050,8 @@ a.button {
   font-size: 1.5em;
   color: #FF5252;
   margin-bottom: -5px; }
+.che .helpPage .ion-android-create {
+  color: #FF5252; }
 .che .card {
   background-color: #303F9F; }
 .che .settingsPage i.icon.ion-android-star {
@@ -8157,6 +8165,8 @@ a.button {
   font-size: 1.5em;
   color: #448AFF;
   margin-bottom: -5px; }
+.cpa .helpPage .ion-android-create {
+  color: #448AFF; }
 .cpa .card {
   background-color: #D32F2F; }
 .cpa .settingsPage i.icon.ion-android-star {
@@ -8270,6 +8280,8 @@ a.button {
   font-size: 1.5em;
   color: #448AFF;
   margin-bottom: -5px; }
+.eve .helpPage .ion-android-create {
+  color: #448AFF; }
 .eve .card {
   background-color: #303F9F; }
 .eve .settingsPage i.icon.ion-android-star {
@@ -8383,6 +8395,8 @@ a.button {
   font-size: 1.5em;
   color: #FF5722;
   margin-bottom: -5px; }
+.hul .helpPage .ion-android-create {
+  color: #FF5722; }
 .hul .card {
   background-color: #F57C00; }
 .hul .settingsPage i.icon.ion-android-star {
@@ -8496,6 +8510,8 @@ a.button {
   font-size: 1.5em;
   color: #FF9800;
   margin-bottom: -5px; }
+.lei .helpPage .ion-android-create {
+  color: #FF9800; }
 .lei .card {
   background-color: #303F9F; }
 .lei .settingsPage i.icon.ion-android-star {
@@ -8609,6 +8625,8 @@ a.button {
   font-size: 1.5em;
   color: #009688;
   margin-bottom: -5px; }
+.liv .helpPage .ion-android-create {
+  color: #009688; }
 .liv .card {
   background-color: #D32F2F; }
 .liv .settingsPage i.icon.ion-android-star {
@@ -8722,6 +8740,8 @@ a.button {
   font-size: 1.5em;
   color: #FFC107;
   margin-bottom: -5px; }
+.mnc .helpPage .ion-android-create {
+  color: #FFC107; }
 .mnc .card {
   background-color: #0288D1; }
 .mnc .settingsPage i.icon.ion-android-star {
@@ -8835,6 +8855,8 @@ a.button {
   font-size: 1.5em;
   color: #FF9800;
   margin-bottom: -5px; }
+.mnu .helpPage .ion-android-create {
+  color: #FF9800; }
 .mnu .card {
   background-color: #D32F2F; }
 .mnu .settingsPage i.icon.ion-android-star {
@@ -8948,6 +8970,8 @@ a.button {
   font-size: 1.5em;
   color: #FFC107;
   margin-bottom: -5px; }
+.new .helpPage .ion-android-create {
+  color: #FFC107; }
 .new .card {
   background-color: #616161; }
 .new .settingsPage i.icon.ion-android-star {
@@ -9061,6 +9085,8 @@ a.button {
   font-size: 1.5em;
   color: #9E9E9E;
   margin-bottom: -5px; }
+.qpr .helpPage .ion-android-create {
+  color: #9E9E9E; }
 .qpr .card {
   background-color: #1976D2; }
 .qpr .settingsPage i.icon.ion-android-star {
@@ -9174,6 +9200,8 @@ a.button {
   font-size: 1.5em;
   color: #FFC107;
   margin-bottom: -5px; }
+.shm .helpPage .ion-android-create {
+  color: #FFC107; }
 .shm .card {
   background-color: #D32F2F; }
 .shm .settingsPage i.icon.ion-android-star {
@@ -9287,6 +9315,8 @@ a.button {
   font-size: 1.5em;
   color: #448AFF;
   margin-bottom: -5px; }
+.stk .helpPage .ion-android-create {
+  color: #448AFF; }
 .stk .card {
   background-color: #D32F2F; }
 .stk .settingsPage i.icon.ion-android-star {
@@ -9400,6 +9430,8 @@ a.button {
   font-size: 1.5em;
   color: #FF9800;
   margin-bottom: -5px; }
+.sun .helpPage .ion-android-create {
+  color: #FF9800; }
 .sun .card {
   background-color: #D32F2F; }
 .sun .settingsPage i.icon.ion-android-star {
@@ -9513,6 +9545,8 @@ a.button {
   font-size: 1.5em;
   color: #FF9800;
   margin-bottom: -5px; }
+.swa .helpPage .ion-android-create {
+  color: #FF9800; }
 .swa .card {
   background-color: #455A64; }
 .swa .settingsPage i.icon.ion-android-star {
@@ -9626,6 +9660,8 @@ a.button {
   font-size: 1.5em;
   color: #3F51B5;
   margin-bottom: -5px; }
+.tot .helpPage .ion-android-create {
+  color: #3F51B5; }
 .tot .card {
   background-color: #616161; }
 .tot .settingsPage i.icon.ion-android-star {
@@ -9739,6 +9775,8 @@ a.button {
   font-size: 1.5em;
   color: #9E9E9E;
   margin-bottom: -5px; }
+.wbm .helpPage .ion-android-create {
+  color: #9E9E9E; }
 .wbm .card {
   background-color: #303F9F; }
 .wbm .settingsPage i.icon.ion-android-star {
@@ -9852,6 +9890,8 @@ a.button {
   font-size: 1.5em;
   color: #FFC107;
   margin-bottom: -5px; }
+.whm .helpPage .ion-android-create {
+  color: #FFC107; }
 .whm .card {
   background-color: #512DA8; }
 .whm .settingsPage i.icon.ion-android-star {
