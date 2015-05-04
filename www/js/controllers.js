@@ -19,10 +19,10 @@ angular.module('footFeeds.controllers', [])
         twitter: '@arsenal',
         instagram: '@arsenal'
     };
-    team = $scope.selectedTeam;//Sets the default team, if none is stored
-    localStorage.setItem('selectedTeam', JSON.stringify(team));//Sets the default team, if none is stored
-    
-    
+    team = $scope.selectedTeam; //Sets the default team, if none is stored
+    localStorage.setItem('selectedTeam', JSON.stringify(team)); //Sets the default team, if none is stored
+
+
     $scope.moreMenu = function () { //The button on the right side of the nav bar displays a pop-up
         var alertPopup = $ionicPopup.alert({
             cssClass: 'aboutPopup', //Assigns classes to the pop-up box for styling
@@ -239,7 +239,9 @@ angular.module('footFeeds.controllers', [])
     };
     $scope.updateFilter = function (filter) {
         localStorage.filter = filter.name;
-        setTimeout(function(){ $window.location.reload(true); }, 500);
+        setTimeout(function () {
+            $window.location.reload(true);
+        }, 500);
     }
 })
 
@@ -280,7 +282,7 @@ angular.module('footFeeds.controllers', [])
             template: '<ion-spinner icon="android"></ion-spinner>'
         })
         Feed.parseFeed($scope.feedSrc).then(function (res) {
-            $scope.feeds = res.data.responseData.feed.entries;//Navigates the returned JSON object and stores the necessary data in scope
+            $scope.feeds = res.data.responseData.feed.entries; //Navigates the returned JSON object and stores the necessary data in scope
             $ionicLoading.hide();
         });
     };
@@ -353,5 +355,61 @@ angular.module('footFeeds.controllers', [])
         runFeed();
         $scope.$broadcast('scroll.refreshComplete');
     };
+
+})
+
+
+.controller('userFormController', function ($scope, $window, $state) {
+    
+    Parse.initialize("TBH2gJwlnhLnehk5ZfOqHjtGFo9pLy0zYfqDR0yh", "pceJz3UaZJC0Aismo9gNpCWSCAZA3AzMgLJUsYsx");
+    
+    $scope.selectedTeam = JSON.parse(localStorage.getItem('selectedTeam')) || [];
+
+    $scope.submitForm = function () {
+        if ($scope.fName && $scope.sName && $scope.postTitle && $scope.postMessage) { //If the values are entered
+            var UserPost = Parse.Object.extend("UserPost");
+            var post = new UserPost();
+            post.set("firstname", $scope.fName);
+            post.set("lastname", $scope.sName);
+            post.set("postTitle", $scope.postTitle);
+            post.set("postMessage", $scope.postMessage);
+            post.set("team", $scope.selectedTeam.value);
+            post.save(null, {});
+            $state.go('app.user');
+        }
+    };
+
+})
+
+.controller('userController', function ($scope, $state) {
+    
+    Parse.initialize("TBH2gJwlnhLnehk5ZfOqHjtGFo9pLy0zYfqDR0yh", "pceJz3UaZJC0Aismo9gNpCWSCAZA3AzMgLJUsYsx");
+    
+    $scope.selectedTeam = JSON.parse(localStorage.getItem('selectedTeam')) || [];
+
+    $scope.goToSubmit = function () {
+        $state.go('app.userSubmit');
+    }
+    
+    $scope.doRefresh = function () {
+        $scope.loadPosts();
+    };
+    
+    $scope.loadPosts = function () {
+        var UserPost = Parse.Object.extend("UserPost");
+        var query = new Parse.Query(UserPost);
+        query.equalTo("team", $scope.selectedTeam.value);
+        query.find({
+            success: function (results) {
+                $scope.userFeeds = results;
+                $scope.$broadcast('scroll.refreshComplete');
+            },
+            error: function (error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    }
+    
+    $scope.loadPosts();
 
 })

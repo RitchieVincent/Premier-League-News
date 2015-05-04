@@ -57,7 +57,7 @@ $bgColour: #ECECEC;
 
 
 //Multiple pages------------------------------------
-.settingsPage, .newsPage, .socialPage, .homePage, .helpPage{
+.settingsPage, .newsPage, .socialPage, .homePage, .helpPage, .userPage, .userSubmitPage{
     margin-top: 15px;
     background-color: $bgColour;
 }
@@ -183,6 +183,85 @@ $bgColour: #ECECEC;
         select.teamSelectBox {
             margin-left: 40px;
             width: 80%;
+        }
+    }
+    .addNewBtn{
+        background-color: $accent !important;
+        position: fixed;
+        bottom: 40px;
+        right: 15px;
+        z-index: 5;
+        width: 70px !important;
+        height: 70px !important; 
+    }
+    .userPage{
+        .newsDate{
+            color: $accent;
+            font-size: 0.7em;
+            font-weight: 500;
+            display: inline;
+        }
+        .newsName{
+            color: $lprimary;
+            font-size: 0.7em;
+            font-weight: 500;
+            display: inline;
+            float: right;
+        }
+        p{
+            color: $ptext;
+            font-weight: 400;
+            white-space: normal;
+        }
+        h3{
+            color: $dprimary;
+            font-size: 1em;
+            line-height: 1em;
+            white-space: normal;
+        }
+        .userTop{
+            padding-top: 15px;
+            h1 {
+                color: $accent;
+                font-size: 1.5em;
+                line-height: 1.5em;
+                margin: 0;
+            }
+            .teamImage img {
+                margin-bottom: 0;
+                height: 55px;
+                width: 55px;
+            }
+        }
+        .userBottom{
+            margin-bottom: 120px;
+        }
+    }
+    .userSubmitPage{
+        .input-field input[type=text]:focus {
+            border-bottom: 1px solid $accent;
+            box-shadow: 0 1px 0 0 $accent;
+        }
+        .input-field input[type=text]:focus + label {
+            color: $accent;
+        }
+        .input-field label{
+            left: 0rem;
+        }
+        .row{
+            margin-bottom: 0px;
+        }
+        textarea.materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid $accent;
+            box-shadow: 0 1px 0 0 $accent;
+        }
+        textarea.materialize-textarea:focus:not([readonly])+label {
+            color: $accent;
+        }
+        .userSubmit {
+            margin: 0 auto;
+            background-color: $accent;
+            height: 45px;
         }
     }
 }
@@ -389,7 +468,6 @@ ion-header-bar {
 //News page---------------------------
 .newsPage{
     .newsBottom{
-        margin-top: 10px;
         margin-bottom: 2em;
         padding-left: 0px;
         padding-right: 0px;
@@ -594,3 +672,5 @@ drawer {
     opacity: 0.6;
     background-color: #000000;
 }
+
+//User feeds-----------------------------

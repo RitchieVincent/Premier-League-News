@@ -7632,7 +7632,7 @@ a.button {
 [type="radio"] + label {
   color: #212121; }
 
-.settingsPage, .newsPage, .socialPage, .homePage, .helpPage {
+.settingsPage, .newsPage, .socialPage, .homePage, .helpPage, .userPage, .userSubmitPage {
   margin-top: 15px;
   background-color: #ECECEC; }
 
@@ -7717,6 +7717,65 @@ a.button {
 .ars .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.ars .addNewBtn {
+  background-color: #536DFE !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.ars .userPage .newsDate {
+  color: #536DFE;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.ars .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.ars .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.ars .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.ars .userPage .userTop {
+  padding-top: 15px; }
+  .ars .userPage .userTop h1 {
+    color: #536DFE;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .ars .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.ars .userPage .userBottom {
+  margin-bottom: 120px; }
+.ars .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #536DFE;
+  box-shadow: 0 1px 0 0 #536DFE; }
+.ars .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #536DFE; }
+.ars .userSubmitPage .input-field label {
+  left: 0rem; }
+.ars .userSubmitPage .row {
+  margin-bottom: 0px; }
+.ars .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #536DFE;
+  box-shadow: 0 1px 0 0 #536DFE; }
+.ars .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #536DFE; }
+.ars .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #536DFE;
+  height: 45px; }
 
 .avi .navBar {
   background-color: #673AB7; }
@@ -7771,6 +7830,65 @@ a.button {
 .avi .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.avi .addNewBtn {
+  background-color: #448AFF !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.avi .userPage .newsDate {
+  color: #448AFF;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.avi .userPage .newsName {
+  color: #D1C4E9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.avi .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.avi .userPage h3 {
+  color: #512DA8;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.avi .userPage .userTop {
+  padding-top: 15px; }
+  .avi .userPage .userTop h1 {
+    color: #448AFF;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .avi .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.avi .userPage .userBottom {
+  margin-bottom: 120px; }
+.avi .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.avi .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #448AFF; }
+.avi .userSubmitPage .input-field label {
+  left: 0rem; }
+.avi .userSubmitPage .row {
+  margin-bottom: 0px; }
+.avi .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.avi .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #448AFF; }
+.avi .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #448AFF;
+  height: 45px; }
 
 .bur .navBar {
   background-color: #9C27B0; }
@@ -7825,6 +7943,65 @@ a.button {
 .bur .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.bur .addNewBtn {
+  background-color: #FFC107 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.bur .userPage .newsDate {
+  color: #FFC107;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.bur .userPage .newsName {
+  color: #E1BEE7;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.bur .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.bur .userPage h3 {
+  color: #7B1FA2;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.bur .userPage .userTop {
+  padding-top: 15px; }
+  .bur .userPage .userTop h1 {
+    color: #FFC107;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .bur .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.bur .userPage .userBottom {
+  margin-bottom: 120px; }
+.bur .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.bur .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FFC107; }
+.bur .userSubmitPage .input-field label {
+  left: 0rem; }
+.bur .userSubmitPage .row {
+  margin-bottom: 0px; }
+.bur .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.bur .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FFC107; }
+.bur .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FFC107;
+  height: 45px; }
 
 .che .navBar {
   background-color: #3F51B5; }
@@ -7879,6 +8056,65 @@ a.button {
 .che .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.che .addNewBtn {
+  background-color: #FF5252 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.che .userPage .newsDate {
+  color: #FF5252;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.che .userPage .newsName {
+  color: #C5CAE9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.che .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.che .userPage h3 {
+  color: #303F9F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.che .userPage .userTop {
+  padding-top: 15px; }
+  .che .userPage .userTop h1 {
+    color: #FF5252;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .che .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.che .userPage .userBottom {
+  margin-bottom: 120px; }
+.che .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF5252;
+  box-shadow: 0 1px 0 0 #FF5252; }
+.che .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF5252; }
+.che .userSubmitPage .input-field label {
+  left: 0rem; }
+.che .userSubmitPage .row {
+  margin-bottom: 0px; }
+.che .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF5252;
+  box-shadow: 0 1px 0 0 #FF5252; }
+.che .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF5252; }
+.che .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF5252;
+  height: 45px; }
 
 .cpa .navBar {
   background-color: #F44336; }
@@ -7933,6 +8169,65 @@ a.button {
 .cpa .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.cpa .addNewBtn {
+  background-color: #448AFF !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.cpa .userPage .newsDate {
+  color: #448AFF;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.cpa .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.cpa .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.cpa .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.cpa .userPage .userTop {
+  padding-top: 15px; }
+  .cpa .userPage .userTop h1 {
+    color: #448AFF;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .cpa .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.cpa .userPage .userBottom {
+  margin-bottom: 120px; }
+.cpa .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.cpa .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #448AFF; }
+.cpa .userSubmitPage .input-field label {
+  left: 0rem; }
+.cpa .userSubmitPage .row {
+  margin-bottom: 0px; }
+.cpa .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.cpa .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #448AFF; }
+.cpa .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #448AFF;
+  height: 45px; }
 
 .eve .navBar {
   background-color: #3F51B5; }
@@ -7987,6 +8282,65 @@ a.button {
 .eve .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.eve .addNewBtn {
+  background-color: #448AFF !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.eve .userPage .newsDate {
+  color: #448AFF;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.eve .userPage .newsName {
+  color: #C5CAE9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.eve .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.eve .userPage h3 {
+  color: #303F9F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.eve .userPage .userTop {
+  padding-top: 15px; }
+  .eve .userPage .userTop h1 {
+    color: #448AFF;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .eve .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.eve .userPage .userBottom {
+  margin-bottom: 120px; }
+.eve .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.eve .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #448AFF; }
+.eve .userSubmitPage .input-field label {
+  left: 0rem; }
+.eve .userSubmitPage .row {
+  margin-bottom: 0px; }
+.eve .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.eve .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #448AFF; }
+.eve .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #448AFF;
+  height: 45px; }
 
 .hul .navBar {
   background-color: #FF9800; }
@@ -8041,6 +8395,65 @@ a.button {
 .hul .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.hul .addNewBtn {
+  background-color: #FF5722 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.hul .userPage .newsDate {
+  color: #FF5722;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.hul .userPage .newsName {
+  color: #FFE0B2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.hul .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.hul .userPage h3 {
+  color: #F57C00;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.hul .userPage .userTop {
+  padding-top: 15px; }
+  .hul .userPage .userTop h1 {
+    color: #FF5722;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .hul .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.hul .userPage .userBottom {
+  margin-bottom: 120px; }
+.hul .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF5722;
+  box-shadow: 0 1px 0 0 #FF5722; }
+.hul .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF5722; }
+.hul .userSubmitPage .input-field label {
+  left: 0rem; }
+.hul .userSubmitPage .row {
+  margin-bottom: 0px; }
+.hul .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF5722;
+  box-shadow: 0 1px 0 0 #FF5722; }
+.hul .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF5722; }
+.hul .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF5722;
+  height: 45px; }
 
 .lei .navBar {
   background-color: #3F51B5; }
@@ -8095,6 +8508,65 @@ a.button {
 .lei .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.lei .addNewBtn {
+  background-color: #FF9800 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.lei .userPage .newsDate {
+  color: #FF9800;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.lei .userPage .newsName {
+  color: #C5CAE9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.lei .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.lei .userPage h3 {
+  color: #303F9F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.lei .userPage .userTop {
+  padding-top: 15px; }
+  .lei .userPage .userTop h1 {
+    color: #FF9800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .lei .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.lei .userPage .userBottom {
+  margin-bottom: 120px; }
+.lei .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.lei .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF9800; }
+.lei .userSubmitPage .input-field label {
+  left: 0rem; }
+.lei .userSubmitPage .row {
+  margin-bottom: 0px; }
+.lei .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.lei .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF9800; }
+.lei .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF9800;
+  height: 45px; }
 
 .liv .navBar {
   background-color: #F44336; }
@@ -8149,6 +8621,65 @@ a.button {
 .liv .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.liv .addNewBtn {
+  background-color: #009688 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.liv .userPage .newsDate {
+  color: #009688;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.liv .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.liv .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.liv .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.liv .userPage .userTop {
+  padding-top: 15px; }
+  .liv .userPage .userTop h1 {
+    color: #009688;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .liv .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.liv .userPage .userBottom {
+  margin-bottom: 120px; }
+.liv .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #009688; }
+.liv .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #009688; }
+.liv .userSubmitPage .input-field label {
+  left: 0rem; }
+.liv .userSubmitPage .row {
+  margin-bottom: 0px; }
+.liv .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #009688; }
+.liv .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #009688; }
+.liv .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #009688;
+  height: 45px; }
 
 .mnc .navBar {
   background-color: #03A9F4; }
@@ -8203,6 +8734,65 @@ a.button {
 .mnc .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.mnc .addNewBtn {
+  background-color: #FFC107 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.mnc .userPage .newsDate {
+  color: #FFC107;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.mnc .userPage .newsName {
+  color: #B3E5FC;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.mnc .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.mnc .userPage h3 {
+  color: #0288D1;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.mnc .userPage .userTop {
+  padding-top: 15px; }
+  .mnc .userPage .userTop h1 {
+    color: #FFC107;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .mnc .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.mnc .userPage .userBottom {
+  margin-bottom: 120px; }
+.mnc .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.mnc .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FFC107; }
+.mnc .userSubmitPage .input-field label {
+  left: 0rem; }
+.mnc .userSubmitPage .row {
+  margin-bottom: 0px; }
+.mnc .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.mnc .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FFC107; }
+.mnc .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FFC107;
+  height: 45px; }
 
 .mnu .navBar {
   background-color: #F44336; }
@@ -8257,6 +8847,65 @@ a.button {
 .mnu .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.mnu .addNewBtn {
+  background-color: #FF9800 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.mnu .userPage .newsDate {
+  color: #FF9800;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.mnu .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.mnu .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.mnu .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.mnu .userPage .userTop {
+  padding-top: 15px; }
+  .mnu .userPage .userTop h1 {
+    color: #FF9800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .mnu .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.mnu .userPage .userBottom {
+  margin-bottom: 120px; }
+.mnu .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.mnu .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF9800; }
+.mnu .userSubmitPage .input-field label {
+  left: 0rem; }
+.mnu .userSubmitPage .row {
+  margin-bottom: 0px; }
+.mnu .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.mnu .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF9800; }
+.mnu .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF9800;
+  height: 45px; }
 
 .new .navBar {
   background-color: #9E9E9E; }
@@ -8311,6 +8960,65 @@ a.button {
 .new .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.new .addNewBtn {
+  background-color: #FFC107 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.new .userPage .newsDate {
+  color: #FFC107;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.new .userPage .newsName {
+  color: #F5F5F5;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.new .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.new .userPage h3 {
+  color: #616161;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.new .userPage .userTop {
+  padding-top: 15px; }
+  .new .userPage .userTop h1 {
+    color: #FFC107;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .new .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.new .userPage .userBottom {
+  margin-bottom: 120px; }
+.new .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.new .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FFC107; }
+.new .userSubmitPage .input-field label {
+  left: 0rem; }
+.new .userSubmitPage .row {
+  margin-bottom: 0px; }
+.new .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.new .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FFC107; }
+.new .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FFC107;
+  height: 45px; }
 
 .qpr .navBar {
   background-color: #2196F3; }
@@ -8365,6 +9073,65 @@ a.button {
 .qpr .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.qpr .addNewBtn {
+  background-color: #9E9E9E !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.qpr .userPage .newsDate {
+  color: #9E9E9E;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.qpr .userPage .newsName {
+  color: #BBDEFB;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.qpr .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.qpr .userPage h3 {
+  color: #1976D2;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.qpr .userPage .userTop {
+  padding-top: 15px; }
+  .qpr .userPage .userTop h1 {
+    color: #9E9E9E;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .qpr .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.qpr .userPage .userBottom {
+  margin-bottom: 120px; }
+.qpr .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #9E9E9E;
+  box-shadow: 0 1px 0 0 #9E9E9E; }
+.qpr .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #9E9E9E; }
+.qpr .userSubmitPage .input-field label {
+  left: 0rem; }
+.qpr .userSubmitPage .row {
+  margin-bottom: 0px; }
+.qpr .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #9E9E9E;
+  box-shadow: 0 1px 0 0 #9E9E9E; }
+.qpr .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #9E9E9E; }
+.qpr .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #9E9E9E;
+  height: 45px; }
 
 .shm .navBar {
   background-color: #F44336; }
@@ -8419,6 +9186,65 @@ a.button {
 .shm .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.shm .addNewBtn {
+  background-color: #FFC107 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.shm .userPage .newsDate {
+  color: #FFC107;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.shm .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.shm .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.shm .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.shm .userPage .userTop {
+  padding-top: 15px; }
+  .shm .userPage .userTop h1 {
+    color: #FFC107;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .shm .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.shm .userPage .userBottom {
+  margin-bottom: 120px; }
+.shm .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.shm .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FFC107; }
+.shm .userSubmitPage .input-field label {
+  left: 0rem; }
+.shm .userSubmitPage .row {
+  margin-bottom: 0px; }
+.shm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.shm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FFC107; }
+.shm .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FFC107;
+  height: 45px; }
 
 .stk .navBar {
   background-color: #F44336; }
@@ -8473,6 +9299,65 @@ a.button {
 .stk .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.stk .addNewBtn {
+  background-color: #448AFF !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.stk .userPage .newsDate {
+  color: #448AFF;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.stk .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.stk .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.stk .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.stk .userPage .userTop {
+  padding-top: 15px; }
+  .stk .userPage .userTop h1 {
+    color: #448AFF;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .stk .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.stk .userPage .userBottom {
+  margin-bottom: 120px; }
+.stk .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.stk .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #448AFF; }
+.stk .userSubmitPage .input-field label {
+  left: 0rem; }
+.stk .userSubmitPage .row {
+  margin-bottom: 0px; }
+.stk .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #448AFF;
+  box-shadow: 0 1px 0 0 #448AFF; }
+.stk .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #448AFF; }
+.stk .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #448AFF;
+  height: 45px; }
 
 .sun .navBar {
   background-color: #F44336; }
@@ -8527,6 +9412,65 @@ a.button {
 .sun .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.sun .addNewBtn {
+  background-color: #FF9800 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.sun .userPage .newsDate {
+  color: #FF9800;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.sun .userPage .newsName {
+  color: #FFCDD2;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.sun .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.sun .userPage h3 {
+  color: #D32F2F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.sun .userPage .userTop {
+  padding-top: 15px; }
+  .sun .userPage .userTop h1 {
+    color: #FF9800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .sun .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.sun .userPage .userBottom {
+  margin-bottom: 120px; }
+.sun .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.sun .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF9800; }
+.sun .userSubmitPage .input-field label {
+  left: 0rem; }
+.sun .userSubmitPage .row {
+  margin-bottom: 0px; }
+.sun .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.sun .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF9800; }
+.sun .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF9800;
+  height: 45px; }
 
 .swa .navBar {
   background-color: #607D8B; }
@@ -8581,6 +9525,65 @@ a.button {
 .swa .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.swa .addNewBtn {
+  background-color: #FF9800 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.swa .userPage .newsDate {
+  color: #FF9800;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.swa .userPage .newsName {
+  color: #CFD8DC;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.swa .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.swa .userPage h3 {
+  color: #455A64;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.swa .userPage .userTop {
+  padding-top: 15px; }
+  .swa .userPage .userTop h1 {
+    color: #FF9800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .swa .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.swa .userPage .userBottom {
+  margin-bottom: 120px; }
+.swa .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.swa .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FF9800; }
+.swa .userSubmitPage .input-field label {
+  left: 0rem; }
+.swa .userSubmitPage .row {
+  margin-bottom: 0px; }
+.swa .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FF9800;
+  box-shadow: 0 1px 0 0 #FF9800; }
+.swa .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FF9800; }
+.swa .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FF9800;
+  height: 45px; }
 
 .tot .navBar {
   background-color: #9E9E9E; }
@@ -8635,6 +9638,65 @@ a.button {
 .tot .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.tot .addNewBtn {
+  background-color: #3F51B5 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.tot .userPage .newsDate {
+  color: #3F51B5;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.tot .userPage .newsName {
+  color: #F5F5F5;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.tot .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.tot .userPage h3 {
+  color: #616161;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.tot .userPage .userTop {
+  padding-top: 15px; }
+  .tot .userPage .userTop h1 {
+    color: #3F51B5;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .tot .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.tot .userPage .userBottom {
+  margin-bottom: 120px; }
+.tot .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #3F51B5;
+  box-shadow: 0 1px 0 0 #3F51B5; }
+.tot .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #3F51B5; }
+.tot .userSubmitPage .input-field label {
+  left: 0rem; }
+.tot .userSubmitPage .row {
+  margin-bottom: 0px; }
+.tot .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #3F51B5;
+  box-shadow: 0 1px 0 0 #3F51B5; }
+.tot .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #3F51B5; }
+.tot .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #3F51B5;
+  height: 45px; }
 
 .wbm .navBar {
   background-color: #3F51B5; }
@@ -8689,6 +9751,65 @@ a.button {
 .wbm .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.wbm .addNewBtn {
+  background-color: #9E9E9E !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.wbm .userPage .newsDate {
+  color: #9E9E9E;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.wbm .userPage .newsName {
+  color: #C5CAE9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.wbm .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.wbm .userPage h3 {
+  color: #303F9F;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.wbm .userPage .userTop {
+  padding-top: 15px; }
+  .wbm .userPage .userTop h1 {
+    color: #9E9E9E;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .wbm .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.wbm .userPage .userBottom {
+  margin-bottom: 120px; }
+.wbm .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #9E9E9E;
+  box-shadow: 0 1px 0 0 #9E9E9E; }
+.wbm .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #9E9E9E; }
+.wbm .userSubmitPage .input-field label {
+  left: 0rem; }
+.wbm .userSubmitPage .row {
+  margin-bottom: 0px; }
+.wbm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #9E9E9E;
+  box-shadow: 0 1px 0 0 #9E9E9E; }
+.wbm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #9E9E9E; }
+.wbm .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #9E9E9E;
+  height: 45px; }
 
 .whm .navBar {
   background-color: #673AB7; }
@@ -8743,6 +9864,65 @@ a.button {
 .whm .settingsPage select.teamSelectBox {
   margin-left: 40px;
   width: 80%; }
+.whm .addNewBtn {
+  background-color: #FFC107 !important;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  z-index: 5;
+  width: 70px !important;
+  height: 70px !important; }
+.whm .userPage .newsDate {
+  color: #FFC107;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline; }
+.whm .userPage .newsName {
+  color: #D1C4E9;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: inline;
+  float: right; }
+.whm .userPage p {
+  color: #212121;
+  font-weight: 400;
+  white-space: normal; }
+.whm .userPage h3 {
+  color: #512DA8;
+  font-size: 1em;
+  line-height: 1em;
+  white-space: normal; }
+.whm .userPage .userTop {
+  padding-top: 15px; }
+  .whm .userPage .userTop h1 {
+    color: #FFC107;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0; }
+  .whm .userPage .userTop .teamImage img {
+    margin-bottom: 0;
+    height: 55px;
+    width: 55px; }
+.whm .userPage .userBottom {
+  margin-bottom: 120px; }
+.whm .userSubmitPage .input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.whm .userSubmitPage .input-field input[type=text]:focus + label {
+  color: #FFC107; }
+.whm .userSubmitPage .input-field label {
+  left: 0rem; }
+.whm .userSubmitPage .row {
+  margin-bottom: 0px; }
+.whm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FFC107;
+  box-shadow: 0 1px 0 0 #FFC107; }
+.whm .userSubmitPage textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #FFC107; }
+.whm .userSubmitPage .userSubmit {
+  margin: 0 auto;
+  background-color: #FFC107;
+  height: 45px; }
 
 .navBar {
   border: none;
@@ -8774,7 +9954,6 @@ ion-header-bar i.ion-android-close {
   padding-top: 5px; }
 
 .newsPage .newsBottom {
-  margin-top: 10px;
   margin-bottom: 2em;
   padding-left: 0px;
   padding-right: 0px; }

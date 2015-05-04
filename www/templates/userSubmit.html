@@ -1,0 +1,48 @@
+<ion-view view-title="Submit feed">
+    <ion-content ng-class="selectedTeam.class" class="userSubmitPage">
+        <div class="topSection userSubmitTop">
+
+        </div>
+        <div class="bottomSection userSubmitBottom">
+            <form name="myForm" ng-controller="userFormController">
+                <div class="row">
+                    <div class="col-80 col-offset-10">
+                        <div class="input-field">
+                            <input id="first_name" type="text" ng-model="fName">
+                            <label for="first_name">First Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-80 col-offset-10">
+                        <div class="input-field">
+                            <input id="last_name" type="text" ng-model="sName">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-80 col-offset-10">
+                        <div class="input-field">
+                            <input id="post_title" type="text" ng-model="postTitle">
+                            <label for="post_title">Post title</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-80 col-offset-10">
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" ng-model="postMessage"></textarea>
+                            <label for="message">Post</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <button class="btn waves-effect waves-light userSubmit" type="submit" ng-click="submitForm()">Submit
+                            <i class="mdi-content-send right"></i>
+                        </button>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

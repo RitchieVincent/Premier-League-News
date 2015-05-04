@@ -1,0 +1,25 @@
+<ion-view view-title="User feeds">
+    <button class="btn-floating btn-large waves-effect waves-light addNewBtn" ng-click="goToSubmit()"><i class="ion-android-create"></i>
+    </button>
+    <ion-content ng-class="selectedTeam.class" class="userPage">
+        <ion-refresher on-refresh="loadPosts()" pulling-icon="ion-android-arrow-down"></ion-refresher>
+        <div class="topSection userTop">
+            <div class="item item-divider">
+                <div class="row teamImage">
+                    <img src="{{selectedTeam.image}}" alt="Selected team's logo">
+                </div>
+                <h1>{{selectedTeam.value}}</h1>
+            </div>
+        </div>
+        <div class="bottomSection userBottom">
+            <ul class="list">
+                <li class="item" ng-repeat="userFeed in userFeeds | orderBy:'-createdAt'">
+                    <h3 class="newsTitle">{{userFeed.get("postTitle")}}</h3>
+                    <p class="newsContent">{{userFeed.get("postMessage")}}</p>
+                    <p class="newsDate">{{userFeed.createdAt | date:"MMM dd, yyyy 'at' h:mma"}}</p>
+                    <p class="newsName">{{userFeed.get("firstname")}} {{userFeed.get("lastname")}}</p>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>
